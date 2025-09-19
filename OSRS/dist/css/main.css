@@ -1,0 +1,133 @@
+/* Colors */
+:root {
+    --color-default: #0a0d13;
+    --color-primary: #bc955f;
+    /*#b67118*/
+    --color-primary2: #886841;
+    --color-primary3: #493822;
+    --color-secondary: #333;
+    /*#0e1d34;*/
+    --bg-color-primary: #333;
+}
+
+/* Smooth scroll behavior */
+:root {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border: 2px solid #636262;
+}
+
+#updateModal-content {
+    background: url('../img/home/tan-backdrop.gif') repeat-y top center;
+    padding: 50px 75px;
+    position: relative;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    #updateModal-content {
+        padding: 35px 0px;
+    }
+}
+
+#updateModal-content:before,
+#updateModal-content:after {
+    background: url('../img/home/tan-backdrop-top.gif') no-repeat center top;
+    content: '';
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: -11px;
+    width: 100%
+}
+
+#updateModal-content:after {
+    background: url('../img/home/tan-backdrop-bottom.gif') no-repeat center bottom;
+    bottom: -11px;
+    top: auto
+}
+
+
+.tan-bg {
+    padding: 20px 25px;
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('../img/home/tan-backdrop.gif') repeat-y top center;
+    background-size: cover, 100%;
+    border: none;
+    outline: none;
+    color: #222 !important;
+}
+
+.tan-bg:focus {
+    background-color: transparent;
+}
+
+.tan-bg::-webkit-input-placeholder {
+    color: #333;
+}
+
+.tan-bg::-moz-placeholder {
+    color: #333;
+}
+
+.tan-bg:-ms-input-placeholder {
+    color: #333;
+}
+
+.tan-bg::placeholder {
+    color: #333;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+
+    &:before {
+        content: '';
+        background: linear-gradient(to right, transparent, #818078, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+
+    &:after {
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: black;
+        padding: 0 .5em;
+        line-height: 1.5em;
+        color: #818078;
+        background-color: var(--bg-color-primary);
+    }
+}
+
+.rsBtnSm {
+    background: linear-gradient(to bottom, rgba(176, 150, 97, 0.1), rgba(48, 48, 48, 0.4)),url('../img/home/bg-tile-btn.png');
+    background-size: 100% 100%;
+}
+
+.rsBtnLg {
+    background: linear-gradient(to bottom, rgba(176, 150, 97, 0.1), rgba(48, 48, 48, 0.4)),url('../img/home/bg-tile-btn-lg.png');
+    background-size: 100% 100%;
+}

@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>webOSRS</title>
+  <meta name="keywords" content="runescape, osrs, webosrs, web oldschool runescape, web runescape, web rs3, osrs browser, runescape browser, oldschool runescape browser" />
+<meta name="author" content="PR0TEIN" />
+<meta property="og:title" content="webOSRS" />
+<meta name="description" content="OSRS in the Cloud! The ultimate cloud-based platform for playing Oldschool RuneScape like never before! Experience the freedom of accessing your favorite approved clients all from the comfort of your web browser." />
+<meta property="og:description" content="OSRS in the Cloud! The ultimate cloud-based platform for playing Oldschool RuneScape like never before! Experience the freedom of accessing your favorite approved clients all from the comfort of your web browser." />
+
+<meta property="og:url" content="https://webosrs.com">
+<meta property="og:type" content="website">
+
+<meta itemprop="thumbnailURL" content="https://webosrs.com/dist/img/preview-img.jpg" />
+<meta itemprop="image" content="https://webosrs.com/dist/img/preview-img.jpg" />
+<meta property="og:image" content="https://webosrs.com/dist/img/preview-img.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="webOSRS">
+<meta name="twitter:description" content="OSRS in the Cloud! The ultimate cloud-based platform for playing Oldschool RuneScape like never before! Experience the freedom of accessing your favorite approved clients all from the comfort of your web browser.">
+<meta name="twitter:image" content="https://webosrs.com/dist/img/preview-img.jpg">
+
+<meta property="og:site_name" content="webOSRS">
+
+<link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="dist/img/favicons/site.webmanifest">
+<link rel="mask-icon" href="dist/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="dist/img/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="dist/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">  <!-- Google Fonts -->
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css?v1" rel="stylesheet">
+  <link href="plugins/bootstrap-icons/bootstrap-icons.min.css?v2" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/pro.all.min.css">
+  <link href="plugins/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="plugins/aos/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="dist/css/home.css?v18" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div class="d-inline-block d-lg-none ml-3"></div>
+      <a href="./" class="logo2 d-flex align-items-center" style="text-shadow: -1px 1px 0 #111, 1px 1px 0 #111, 1px -1px 0 #222; -1px -1px 0 #222;">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="dist/img/home/logo.png" alt=""> -->
+                <img src="./dist/img/banner2.png" style="height:40px!important;">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a href="index.html" class="active">Home</a></li> -->
+          <li><a href="#" onclick="scrollToSection('about', 100); return false;">About</a></li>
+          <li><a href="#" onclick="scrollToSection('updates', 100); return false;">Updates</a></li>
+          <li><a href="#" onclick="scrollToSection('features', 100); return false;">Features</a></li>
+                    
+          <li><a href="#" onclick="scrollToSection('pricing', 100); return false;">Pricing</a></li>
+          <li><a href="#" onclick="scrollToSection('team', 100); return false;">Team</a></li>
+          <li><a href="#" onclick="scrollToSection('faq', 100); return false;">FAQs</a></li>
+          <li><a href="#" onclick="scrollToSection('contact', 100); return false;">Contact</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li> -->
+          <li>
+            <a class="do-login font-weight-bold text-sm elevation-2 pl-4 pr-4" href="./login" style="letter-spacing:1px;">
+              <span class="text-center w-100">
+                <img src="dist/img/osrs/icons/sm/authenticator.png" class="mr-1" style="vertical-align:middle;opacity:0.8;margin-bottom:4px;"> Play              </span>
+            </a>
+          </li>          
+          <li class="d-inline-block"><a href="https://discord.gg/wZbn9mYUq6" class="discord" target="_blank"><i class="bi bi-discord text-lg" style="color:#7289da"></i></a></li>
+          <li class="d-inline-block"><a href="https://gitlab.com/webosrs.com/public" class="gitlab" target="_blank"><i class="bi bi-gitlab text-lg" style="color:#fc6d26"></i></a></li>
+          <li class="d-inline-block"><a href="https://twitter.com/webosrs" class="twitter" target="_blank"><i class="bi bi-twitter-x text-lg" style="color:#efefef"></i></a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+
+        <!-- <div class="d-inline-block text-center mt-0 p-0">
+          <img src="dist/img/icons/test11.png" style="height:80px;opacity:0.85;border:0px solid red">
+        </div> -->
+
+        <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <div class="d-inline-block text-md-left text-center">
+            <h3 data-aos="fade-up" style="z-index:1;color:var(--color-primary);font-weight:700">OSRS in the Cloud!</h3>
+          </div>
+          <!-- Cloud OSRS: Play Anywhere, Anytime! -->
+          <p data-aos="fade-up" data-aos-delay="100" style="z-index:1">Welcome to webOSRS, the ultimate cloud-based platform for playing Oldschool RuneScape like never before! Experience the freedom of accessing your favorite approved clients all from the comfort of your web browser.</p>
+
+          <!-- <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" class="form-control" placeholder="ZIP code or CitY">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form> -->
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-4 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span id="players-online" data-purecounter-start="0" data-purecounter-end="226990" data-purecounter-duration="2" class="count purecounter">0</span>
+                <p class="text-nowrap">OSRS Players Online</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-4 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span id="web-users" data-purecounter-start="0" data-purecounter-end="12342" data-purecounter-duration="2" class="count purecounter">0</span>
+                <p class="text-nowrap">webOSRS Users</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <!-- <div class="col-lg-4 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span id="players-in-game" data-purecounter-start="0" data-purecounter-end="116826" data-purecounter-duration="2" class="count purecounter">0</span>
+                <p class="text-nowrap">In Game</p>
+              </div>
+            </div> -->
+            <!-- End Stats Item -->
+
+            <div class="col-lg-4 col-12">
+              <div class="w-100 h-100 text-center pl-3 pr-3">
+                <div class="d-none d-lg-block" style="padding-top:22%"></div>
+                  <a href="#" onclick="scrollToSection('about', 100); return false;" class="btn btn-block elevation-3 pt-2 pb-2 font-weight-bold text-md mb-3" style="border:2px solid #777;font-family: var(--font-default);color:#efefef;font-weight: 700;text-transform: uppercase;"><i class="bi bi-info-circle-fill mr-1"></i> Learn More</a>
+                  <a href="./login" class="btn btn-block elevation-3 pt-2 pb-2 font-weight-bold text-md" style="border:2px solid var(--color-primary3);font-family: var(--font-default);background: var(--color-primary);color:#111;font-weight: 700;text-transform: uppercase;">
+                    <img src="dist/img/icons/rs.png" style="width:24px;height:24px" class="mr-1"> <span style="vertical-align:middle">Play Now</span>
+                  </a>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <!-- <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Web Players Online</p>
+              </div>
+            </div> -->
+            <!-- End Stats Item -->
+
+            <!-- <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Workers</p>
+              </div>
+            </div> -->
+            <!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="dist/img/home/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div> -->
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+  
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+        <!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+        <section id="about" class="about pt-5 pb-3">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative2 align-self-start2 order-lg-last order-first">
+            <!-- <img src="dist/img/home/about.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+              <div class="m-0 p-0">
+                <img src="dist/img/home/chrome-bar.png" class="rounded-top" style="pointer-events: none;width:100%;border-top: 2px solid #404040; border-left: 2px solid #404040; border-right: 2px solid #404040;">
+              </div>
+              <div class="m-0 p-0 elevation-3">
+                <img src="dist/img/home/rs-login.webp" class="img-fluid rounded-bottom" style="pointer-events: none;border-bottom: 2px solid #404040; border-left: 2px solid #404040; border-right: 2px solid #404040;">  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 content order-last order-lg-first pr-5">
+            <h3>About</h3>
+            <p>
+              webOSRS brings the thrilling world of Oldschool RuneScape (OSRS) directly to your web browser with cutting-edge cloud technology. Say goodbye to client installations and welcome instant access to OSRS right from your favorite browser.
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Cloud-Powered Convenience:</h5>
+                  <p>Embrace the freedom of cloud gaming and enjoy OSRS seamlessly on any device with an internet connection.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-window-desktop"></i>
+                <div>
+                  <h5>Play Anywhere, Anytime:</h5>
+                  <p>Experience the convenience of accessing your OSRS account and continuing your adventure on the go, all within your browser.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    
+    <!-- ======= Services Section ======= -->
+    <section id="updates" class="services pt-4">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Latest Updates</span>
+          <h2>Latest Updates</h2>
+
+        </div>
+
+        <div class="row gy-4" id="updates-container">
+
+                    <div class="col-lg-4 col-md-6 col-list-update" data-aos="fade-up" data-aos-delay="100">
+              <div class="card bg-gradient-dark2 rounded" style="background:#312b23;border:1px solid #666;">
+                  <div class="position-relative card-img mb-0 pb-0 read-more-btn" style="cursor:pointer;">
+                      <img src="dist/img/home/notes-general.png?v2" alt="" class="img-fluid" style="pointer-events: none;">
+                                            <div class="position-absolute bottom-0 start-0 w-100 text-center p-2 text-truncate text-bold" style="background-color: rgba(0, 0, 0, 0.5); color: #ccc;font-family: var(--font-default);text-transform: uppercase;">
+                        New Server Acquisition                      </div>
+                      <div class="badge bg-gradient-dark position-absolute top-0 text-right p-2 text-bold" style="right:0px">Oct 03, 2023</div>
+                  </div>
+                  <!-- <h3><a href="service-details.html" class="stretched-link text-dark">Storage</a></h3> -->
+                  <p class="mt-3 pt-0 text-white">We're excited to bring some fantastic news to all our dedicated players and supporters today. Thanks to the overwhelming generosity of our community and the fantastic support from our members through our membership tiers, we've successfully acquired a brand-new server!A... <span class="read-more-btn text-sm font-weight-bold" style="cursor:pointer;color:var(--color-primary);">Read more</span></p>
+                  <span class="d-none full-content-update" style="display:none" data-title="New Server Acquisition" data-date="Oct 03, 2023"><p>We're excited to bring some fantastic news to all our dedicated players and supporters today. Thanks to the overwhelming generosity of our community and the fantastic support from our members through our membership tiers, we've successfully acquired a brand-new server!</p><p>As many of you have noticed, webOSRS has seen a significant increase in player activity in recent months. With our commitment to providing the best gaming experience possible, we recognized the need to scale our infrastructure to accommodate our growing player base. <br></p><p>However, while the acquisition of the server has been a significant milestone for us, maintaining it also comes with its own set of challenges, primarily the monthly costs, which are relatively high. This is where we humbly ask for your continued support.</p><p>To those who've already donated and subscribed to our membership tiers, we extend our heartfelt gratitude. Your contribution made this upgrade possible. For those who've been considering supporting us, now would be a fantastic time. Your continued support will ensure that we can maintain this new server and continue to provide you with the high-quality gaming experience you've come to expect from webOSRS.</p><p><span style="font-size: 1rem;">Thank you for being a part of our journey.</span><br></p></span>
+                                    <div class="ribbon-wrapper" style="left:-5px!important;right:auto!important;transform:rotate(270deg);top:-5px!important;">
+                      <div class="ribbon" style="background:var(--color-primary2);">
+                          Latest
+                      </div>
+                  </div>
+                                </div>
+          </div>
+                              <div class="col-lg-4 col-md-6 col-list-update" data-aos="fade-up" data-aos-delay="100">
+              <div class="card bg-gradient-dark2 rounded" style="background:#312b23;border:1px solid #666;">
+                  <div class="position-relative card-img mb-0 pb-0 read-more-btn" style="cursor:pointer;">
+                      <img src="dist/img/home/notes.png" alt="" class="img-fluid" style="pointer-events: none;">
+                                            <div class="position-absolute bottom-0 start-0 w-100 text-center p-2 text-truncate text-bold" style="background-color: rgba(0, 0, 0, 0.5); color: #ccc;font-family: var(--font-default);text-transform: uppercase;">
+                        More Control and Enhanced Performance!                      </div>
+                      <div class="badge bg-gradient-dark position-absolute top-0 text-right p-2 text-bold" style="right:0px">Aug 25, 2023</div>
+                  </div>
+                  <!-- <h3><a href="service-details.html" class="stretched-link text-dark">Storage</a></h3> -->
+                  <p class="mt-3 pt-0 text-white">Dive right into our latest features on webOSRS that bring you greater customization, efficiency, and visual comfort.What’s Fresh?Window Tiling for Multi-Account Mastery: Tiling isn't just for looks. Now, it's easier than ever to arrange multiple client windows, making... <span class="read-more-btn text-sm font-weight-bold" style="cursor:pointer;color:var(--color-primary);">Read more</span></p>
+                  <span class="d-none full-content-update" style="display:none" data-title="More Control and Enhanced Performance!" data-date="Aug 25, 2023"><p>Dive right into our latest features on webOSRS that bring you greater customization, efficiency, and visual comfort.</p><p><b>What’s Fresh?</b></p><ul><li><span style="font-size: 1rem;">Window Tiling for Multi-Account Mastery: Tiling isn't just for looks. Now, it's easier than ever to arrange multiple client windows, making gameplay on several accounts a breeze.</span></li><li>Quality & Compression Settings in One Spot: Navigate to the 'Client' tab at the top of the page to tweak these new settings under the "Settings" button</li><li>Adjustable Image Quality: Define your visual clarity and potentially enhance client responsiveness.</li><ul><li>Pick from a range of 0-9.</li><li>0: Most basic image quality.</li><li>9: Crisp, top-notch image quality.</li><li>Kick off with a default of 6.</li></ul><li>Compression Controls: Match compression to your processing preferences.</li><ul><li>Selections span from 0-9.</li><li>0: Skip the compression, enjoy rapid CPU processing.</li><li>1-8: A spectrum of compression intensities.</li><li>9: Deep compression; it's a tad more CPU hungry.</li><li>Start smooth with a default of 2.</li></ul><li>Display Fixes: No more truncated views! We’ve rectified an issue where the client display was abruptly cut off in fullscreen mode.</li><li>Refinements & Resolutions: Alongside our main features, we’ve tackled some bugs and made some under-the-hood enhancements to keep your webOSRS experience smooth.</li></ul><p>Your adventure on webOSRS just got a whole lot better. Dive in and explore!</p></span>
+                                </div>
+          </div>
+                              <div class="col-lg-4 col-md-6 col-list-update" data-aos="fade-up" data-aos-delay="100">
+              <div class="card bg-gradient-dark2 rounded" style="background:#312b23;border:1px solid #666;">
+                  <div class="position-relative card-img mb-0 pb-0 read-more-btn" style="cursor:pointer;">
+                      <img src="dist/img/home/notes.png" alt="" class="img-fluid" style="pointer-events: none;">
+                                            <div class="position-absolute bottom-0 start-0 w-100 text-center p-2 text-truncate text-bold" style="background-color: rgba(0, 0, 0, 0.5); color: #ccc;font-family: var(--font-default);text-transform: uppercase;">
+                        Updates and Improvements                       </div>
+                      <div class="badge bg-gradient-dark position-absolute top-0 text-right p-2 text-bold" style="right:0px">Aug 18, 2023</div>
+                  </div>
+                  <!-- <h3><a href="service-details.html" class="stretched-link text-dark">Storage</a></h3> -->
+                  <p class="mt-3 pt-0 text-white">We're thrilled to introduce a series of exciting updates that will transform your experience on the webOSRS platform. These enhancements are designed to take your journey through the world of Old School RuneScape to the next level, providing enhanced convenience and enj... <span class="read-more-btn text-sm font-weight-bold" style="cursor:pointer;color:var(--color-primary);">Read more</span></p>
+                  <span class="d-none full-content-update" style="display:none" data-title="Updates and Improvements " data-date="Aug 18, 2023"><p>We're thrilled to introduce a series of exciting updates that will transform your experience on the webOSRS platform. These enhancements are designed to take your journey through the world of Old School RuneScape to the next level, providing enhanced convenience and enjoyment.</p><p><span style="font-size: 1rem;">Here's a breakdown of the latest improvements:</span><br></p><ul><li><span style="font-size: 1rem;"><b>Faster Reconnection:</b>&nbsp;</span>Say goodbye to frustrating connection drops. Our reconnection process has been optimized to get you back into the game quickly, ensuring uninterrupted gameplay.</li><li><b>Streamlined Client Launch: </b>We've resolved timeout issues that used to shut down clients upon launch due to previous periods of inactivity. Launching your preferred client is now smoother than ever.</li><li><b>Stay Updated: </b>Explore our new page dedicated to updates and development progress. Stay informed about the latest changes and upcoming features that we're working on.</li><li><b>User-Friendly Interface: </b>We've revamped the client selection interface with enhanced visuals and user-friendly features, making your experience more intuitive.</li><li><b>Client Connection Bug Fix: </b>An issue where the client defaulted to RuneLite upon reconnection has been fixed. Now you can seamlessly reconnect with your chosen client.</li><li><b>Jagex Launcher Improvements: </b>Our ongoing efforts to enhance functionality and user experience extend to the Jagex Launcher as well.</li><li><b>Keep Track of Playtime:</b> A playtime display has been added to the top-right corner of the client window, helping you monitor your gaming sessions effortlessly.</li><li><b>Easy Website Access: </b>Check out our FAQs for alternative website links, ensuring you can access webOSRS easily and hassle-free.</li><li><b>Expanded FAQs: </b>Our Frequently Asked Questions section has been expanded to provide you with even more information and assistance.</li><li><b>Membership Tiers:</b> Explore the new membership tiers we've introduced, offering exclusive benefits to enhance your webOSRS journey.</li><li><b>Enhanced Chat Location:</b> Communication is now more convenient with the chat moved to the bottom of the page out of the client view.</li><li><span style="font-size: 1rem;"><b>Enhancements and Fixes: </b>We've worked diligently to address bugs and improve user interface elements, ensuring a smoother experience.</span><br></li></ul><p><span style="font-size: 1rem;">These updates are a testament to our ongoing commitment to providing you with an exceptional RuneScape experience. Dive in and enjoy the latest enhancements that webOSRS has to offer!</span><br></p><p><span style="font-size: 1rem;">Happy exploring!</span></p></span>
+                                </div>
+          </div>
+                    
+          <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="box-shadow: none;">
+              <div class="modal-content text-dark border-0" id="updateModal-content" style="box-shadow: none;">
+                <div class="modal-header mb-0 pb-0" style="border-bottom:0px solid #555;">
+                  <h5 class="modal-title" id="updateModalLabel">Update Title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <hr class="mb-0 pb-0" style="border: 0;height: 2px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));">
+                <div class="modal-body">
+                  <p id="updateDate" class="text-right text-bold"></p>
+                  <p id="fullContent"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="text-center mt-4">
+          <span class="btn btn-sm font-weight-bold rounded p-2 pl-4 pr-4" style="border:2px solid #777;color:#efefef;" id="show-more-updates-btn"><span class="bi bi-chevron-down mr-1"></span> Show more...</span>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+        <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>OSRS in the Cloud!</h3>
+            <p>Experience the freedom of cloud-powered gaming and embark on your boundless OSRS adventure right in your web browser.</p>
+            <a class="cta-btn" href="./login">Play Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features pt-3">
+      <div class="container">
+
+        <div class="section-header">
+          <span>Features</span>
+          <h2>Features</h2>
+        </div>
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5 fadeout-img-1">
+            <img src="dist/img/home/rs-security-image.png" class="img-fluid" alt="" style="pointer-events: none;">
+          </div>
+          <div class="col-md-7">
+            <h3>Secure and Private</h3>
+            <p class="fst-italic">
+              Protecting your data privacy and ensuring a secure gaming environment is our top priority.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Advanced Encryption: We utilize cutting-edge encryption technology to safeguard your login information during transmission.</li>
+              <li><i class="bi bi-check"></i> No Credential Storage: We have a strict policy of not storing any login credentials, providing an additional layer of protection against potential data breaches.</li>
+              <li><i class="bi bi-check"></i> Peace of Mind: Enjoy the game with the knowledge that your personal information is handled with the highest level of security standards.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="dist/img/home/browser-types.png" class="img-fluid" alt="" style="pointer-events: none;">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>Seamless Browser Experience</h3>
+            <p class="fst-italic">
+              Experience the ultimate convenience of playing Oldschool RuneScape (OSRS) directly from your web browser with webOSRS. Say goodbye to installations and embrace a seamless gaming adventure supported by modern web technologies.
+            </p>
+            <p>Whether you prefer Chrome, Firefox, Safari, Opera, or Edge, webOSRS brings the world of Gielinor to your fingertips, making your OSRS journey more accessible and enjoyable than ever before.</p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 fadeout-img-2">
+            <img src="dist/img/home/features2.png" class="img-fluid" alt="" style="pointer-events: none;">
+          </div>
+          <div class="col-md-7">
+            <h3>Simplified OSRS Experience</h3>
+            <p class="fst-italic">Our user-friendly interface ensures a seamless journey through OSRS.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Enjoy a smooth experience exploring the platform, making it easy to access all the tools you need.</li>
+              <li><i class="bi bi-check"></i> We value our users' input and actively incorporate their suggestions to enhance the platform with exciting new features and updates.</li>
+              <li><i class="bi bi-check"></i> Switch between <a href="https://secure.runescape.com/m=news/third-party-client-guidelines?oldschool=1" target="_blank">approved clients</a> with ease, adapting to your preferred gameplay style.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-6 order-1 order-md-2">
+            <div class="row home-client-padding"><div class="col-3 p-3"><img src="dist/img/osrs/clients/jagexlauncher-square.png" alt="Jagex Launcher" class="brand-image rounded w-100 h-100 elevation-3" style="pointer-events: none;border: 2px solid #79828b; margin: 0 auto; padding: 3px;"></div><div class="col-3 p-3"><img src="dist/img/osrs/clients/runelite.jpg" alt="RuneLite" class="brand-image rounded w-100 h-100 elevation-3" style="pointer-events: none;border: 2px solid #79828b; margin: 0 auto; padding: 3px;"></div><div class="col-3 p-3"><img src="dist/img/osrs/clients/official-osrs.jpg" alt="Official OSRS" class="brand-image rounded w-100 h-100 elevation-3" style="pointer-events: none;border: 2px solid #79828b; margin: 0 auto; padding: 3px;"></div><div class="col-3 p-3"><img src="dist/img/osrs/clients/rs3.png?v2" alt="RuneScape 3" class="brand-image rounded w-100 h-100 elevation-3" style="pointer-events: none;border: 2px solid #79828b; margin: 0 auto; padding: 3px;"></div></div>          </div>
+          <div class="col-md-6 order-2 order-md-1">
+            <h3>Choose Your Client</h3>
+            <p class="fst-italic">
+              Immerse yourself in OSRS gameplay using our platform with a wide selection of <a href="https://secure.runescape.com/m=news/third-party-client-guidelines?oldschool=1" target="_blank">approved clients</a>. Whether you prefer the streamlined Jagex Launcher, the feature-rich RuneLite, or the official OSRS client, the power to decide lies in your hands. 
+            </p>
+            <p>Simply select your preferred client and embark on your OSRS journey right from your web browser, hassle-free!</p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+    </section><!-- End Features Section -->
+    
+    
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing pt-0">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <span>Pricing</span>
+          <h2>Pricing</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-10">              
+              <p>We are happy to provide our service for free, allowing you to enjoy your favorite RuneScape adventures right from your web browser. However, maintaining and running the servers that power webOSRS does come with costs.</p>
+              <p>To help cover these costs and support ongoing development, we offer two optional Membership Tiers: Member and Supporter.</p>
+              <p>Regardless of whether you choose to become a Member or Supporter, we are grateful for your support. Your contributions enable us to continue offering webOSRS as a free service to the community.</p>
+            </div>
+          </div>
+
+          <!-- Single Donation -->
+          <div class="col-lg-12 text-sm pricing-tiers donate-tier d-none" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item pb-0 pt-4 text-dark" style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+              <h3>One Time Donation <i class="bi bi-star-fill float-right" style="-webkit-text-stroke: 1px var(--color-primary3);font-size:40px;opacity:0.4;"></i></h3>
+              <p>Send a one time donation to webOSRS to help cover server expenses and keep the project running.</p>
+              <a href="https://ko-fi.com/webosrs/?hidefeed=true&widget=true&embed=true" target="_blank" class="paymentLink buy-btn mb-4 text-white3 border-0" style="color:#efefef;background-color:transparent;font-family:monospace;background-image: url('dist/img/home/bg-tile-btn.png');background-size: 100% 100%;"><i class="fas fa-hands-helping" style="opacity:0.5"></i> Send Donation</a>
+            </div>
+          </div>
+
+                      <div class="col-lg-3 text-sm pricing-tiers" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item pb-0 pt-4" style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <h3>Free <i class="bi bi-star-fill float-right" style="-webkit-text-stroke: 1px var(--color-primary3);font-size:40px;opacity:0.4;color:#dedede"></i></h3>
+                <h4 style="color:var(--color-primary3);" class="pb-0 mb-0"><sup>$</sup>0<span class="text-dark"> / month</span></h4>
+                
+                <hr style="border: none; height: 2px; background-color:#333;">
+                <div class="text-center w-100 p-0 m-0">
+                  <a href="https://ko-fi.com/webosrs/tiers" target="_blank" class="paymentLink buy-btn mb-2 text-white3 border-0" style="background-color:transparent;pointer-events: none;opacity:0.75;user-select: none;color:#ccc;font-family:monospace;background-image: url('dist/img/home/bg-tile-btn.png');background-size: 100% 100%;">Current</a>
+                </div>
+
+                <ul class="pt-0 pb-0 text-xs">
+                  <li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Access to play OSRS</li><li class="na pt-1 pb-0 text-decoration-line-through" style="color:#555"><i class="bi bi-x text-dark"></i>Access to play RS3</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Run up to <span class='text-bold ml-1 mr-1'>1</span> client windows</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Unlimited play time</li><li class="na pt-1 pb-0 text-decoration-line-through" style="color:#555"><i class="bi bi-x text-dark"></i>Priority at high traffic times</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Video output <span class='text-bold ml-1'>Low</span></li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>AI Chat access (<span class='text-bold mr-1'>6</span> RPM)</li><li class="na pt-1 pb-0 text-decoration-line-through" style="color:#555"><i class="bi bi-x text-dark"></i>Membership role (Chat/Discord)</li><li class="na pt-1 pb-0 text-decoration-line-through" style="color:#555"><i class="bi bi-x text-dark"></i>Support server costs and other expenses</li><li class="na pt-1 pb-0 text-decoration-line-through" style="color:#555"><i class="bi bi-x text-dark"></i>Support future development</li>                </ul>
+              </div>
+            </div><!-- End Pricing Item -->
+                      <div class="col-lg-3 text-sm pricing-tiers" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item pb-0 pt-4" style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <h3>Member <i class="bi bi-star-fill float-right" style="-webkit-text-stroke: 1px var(--color-primary3);font-size:40px;opacity:0.4;color:#e6b329"></i></h3>
+                <h4 style="color:var(--color-primary3);" class="pb-0 mb-0"><sup>$</sup>5<span class="text-dark"> / month</span></h4>
+                
+                <hr style="border: none; height: 2px; background-color:#333;">
+                <div class="text-center w-100 p-0 m-0">
+                  <a href="https://ko-fi.com/webosrs/tiers" target="_blank" class="paymentLink buy-btn mb-2 text-white3 border-0" style="background-color:transparent;color:#efefef;font-family:monospace;background-image: url('dist/img/home/bg-tile-btn.png');background-size: 100% 100%;"><img src="dist/img/icons/coins.png" style="width:22px;height:auto;opacity:0.8"> Subscribe</a>
+                </div>
+
+                <ul class="pt-0 pb-0 text-xs">
+                  <li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Access to play OSRS</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Access to play RS3</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Run up to <span class='text-bold ml-1 mr-1'>2</span> client windows</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Unlimited play time</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Priority at high traffic times</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Video output <span class='text-bold ml-1'>Medium/High</span></li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>AI Chat access (<span class='text-bold mr-1'>12</span> RPM)</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Membership role (Chat/Discord)</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Support server costs and other expenses</li><li class="na pt-1 pb-0 text-decoration-line-through" style="color:#555"><i class="bi bi-x text-dark"></i>Support future development</li>                </ul>
+              </div>
+            </div><!-- End Pricing Item -->
+                      <div class="col-lg-3 text-sm pricing-tiers" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-item pb-0 pt-4" style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                  <div class="ribbon-wrapper" style="margin-right:7px;opacity:0.5">
+                    <div class="ribbon bg-gradient-success">
+                      Best
+                    </div>
+                  </div>
+                                <h3>Supporter <i class="bi bi-star-fill float-right" style="-webkit-text-stroke: 1px var(--color-primary3);font-size:40px;opacity:0.4;color:#b448b8"></i></h3>
+                <h4 style="color:var(--color-primary3);" class="pb-0 mb-0"><sup>$</sup>10<span class="text-dark"> / month</span></h4>
+                
+                <hr style="border: none; height: 2px; background-color:#333;">
+                <div class="text-center w-100 p-0 m-0">
+                  <a href="https://ko-fi.com/webosrs/tiers" target="_blank" class="paymentLink buy-btn mb-2 text-white3 border-0" style="background-color:transparent;color:#efefef;font-family:monospace;background-image: url('dist/img/home/bg-tile-btn.png');background-size: 100% 100%;"><img src="dist/img/icons/coins.png" style="width:22px;height:auto;opacity:0.8"> Subscribe</a>
+                </div>
+
+                <ul class="pt-0 pb-0 text-xs">
+                  <li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Access to play OSRS</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Access to play RS3</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Run up to <span class='text-bold ml-1 mr-1'>3</span> client windows</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Unlimited play time</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Priority at high traffic times</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Video output <span class='text-bold ml-1'>Medium/High</span></li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>AI Chat access (<span class='text-bold mr-1'>12</span> RPM)</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Membership role (Chat/Discord)</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Support server costs and other expenses</li><li class="text-dark pt-1 pb-0"><i class="bi bi-check" style="color:#375506"></i>Support future development</li>                </ul>
+              </div>
+            </div><!-- End Pricing Item -->
+          
+                                          
+          <div class="col-lg-3 text-sm rounded" data-aos="fade-up" data-aos-delay="100">
+            <div class="table-responsive rounded" style="width:100%;border:2px solid #666">
+                <table class="table align-left table-dark table-striped table-hover2 mb-0 rounded" style="table-layout: fixed; width: 100%;">
+                    <colgroup>
+                      <col style="width: 60px;">
+                      <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                          <td class="text-center bg-gradient-dark2 pt-1 pb-1 text-lg text-bold" colspan="2" style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.9)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;">🏆 &nbsp;Top Supporters</td></tr>
+                        <tr>
+                            <th scope="col" style="background:#111!important;width:1%; white-space:nowrap;" class="m-0 pt-1 pb-1 text-left">Rank</th>
+                            <th scope="col" style="background:#111!important;" class="text-left ml-3 m-0 pt-1 pb-1">Name</th>
+                        </tr>
+                    </thead>
+                                        <tbody>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-warning text-dark fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      1                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/W7W5TZQVN" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon5.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2 pulse-img-leaderboard"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        Hodgy                                      </span>
+                                      🥇                                    </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-secondary fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      2                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/Q5Q5PCZ8Q" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon3.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2 pulse-img-leaderboard"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        Jason                                      </span>
+                                      🥈                                    </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-orange fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      3                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/L4L0PCRT2" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon4.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2 pulse-img-leaderboard"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        WacNordo                                      </span>
+                                      🥉                                    </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      4                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/B0B01C1UIH" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon4.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        Logan Simpson                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      5                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/Q5Q11DBGUV" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon3.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        Aidan                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      6                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/J3J710UCNO" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon2.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        Simmoninbuns                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      7                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/D1D21FIWXA" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon5.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        GorumGamer                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      8                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/D1D11JJ7NS" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon4.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        JACOBSTUARTSCOTT                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      9                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/V7V1Z09IF" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://ko-fi.com/img/anon4.png?v=1"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        Fe TheMax                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                                                                <tr style="background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;border-top:0px;">
+                                <td style="p-0 m-0" style="vertical-align: middle;">
+                                  <span class="badge bg-gradient-indigo fs-6" style="width:30px;padding:3px;margin:0px;">
+                                      10                                  </span>
+                                </td>
+                                <td class="text-start pt-0 pb-0" style="vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                  <a href="https://ko-fi.com/F2F21KPUPN" target="_blank" class="text-white">
+                                    <div class="d-flex align-items-center w-100" style="min-width:0;">
+                                                                              <img src="https://storage.ko-fi.com/cdn/useruploads/post/4c43a951-2592-4227-a2e4-b0f5e1ae2e49_45258c82-3317-49de-a346-089c295e33da.png"
+                                            alt="avatar"
+                                            class="rounded-circle me-2"
+                                            style="width:25px;height:25px;object-fit:cover;flex-shrink:0;">
+                                                                            <span class="flex-grow-1 text-truncate">
+                                        clicheripples                                      </span>
+                                                                          </div>
+                                  </a>
+                                </td>
+                            </tr>
+                                            </tbody>
+                </table>
+            </div>
+          </div>
+          
+        </div>
+        
+      <!-- Divider -->
+      <hr style="border: none; height: 2px; background-color:#777;">
+
+      <!-- Mobile version (visible on small screens only) -->
+      <a href="https://ko-fi.com/webosrs" target="_blank">
+        <div class="d-flex justify-content-center mt-3 mb-0 p-0 d-md-none">
+          <div class="d-flex align-items-center text-white text-sm">
+            <img src="https://storage.ko-fi.com/cdn/cup-border.png" 
+                class="me-2" 
+                style="height:22px; width:auto; opacity:0.65;">
+            <span>
+              Be part of the current <b>125</b> users powering webOSRS with membership!
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop version (visible on md and up only) -->
+      <a href="https://ko-fi.com/webosrs" target="_blank">
+        <div class="d-none d-md-flex justify-content-center mt-2 mb-0">
+          <div class="d-flex align-items-center justify-content-center"
+              style="background: linear-gradient(to bottom, rgba(129, 129, 129, 0.2), rgba(112, 57, 6, 0.4)), url('dist/img/home/tan-backdrop.gif') center/cover no-repeat;
+                      height: 38px; max-width: 610px; width: 100%; line-height:38px;opacity:0.9">
+            <div class="d-flex align-items-center text-dark text-truncate">
+              <img src="https://storage.ko-fi.com/cdn/cup-border.png" style="opacity:0.65;height:22px;width:auto;" class="mr-2">
+              <span>
+                Be part of the current <b>125</b> users powering webOSRS with membership!
+              </span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      </div>
+      <!-- Payment Modal -->
+      <div class="modal" id="paymentModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered kofi-open-loading" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-body text-center p-5">
+              <div class="text-sm text-warning payment-adblock mb-4" style="display:none"><i class="bi bi-info-circle-fill text-muted" style="font-size:40px;"></i><br><br>It appears that the link was unable to open in a new tab due to a browser setting or an active popup blocker.<br><br>To proceed, please click the "Continue" button below, and it will direct you to the intended website.</div>
+              <div class="payment-spinner spinner-border text-white mt-3" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <p class="mt-3 payment-kofi">
+                We use Ko-Fi to process payments.
+                <br>
+                <img src="https://storage.ko-fi.com/cdn/cup-border.png" style="height:60px; width:auto;" class="mb-2 mt-4">
+              </p>
+              <p id="countdownText" class="mt-3 text-muted text-sm" style="display:none">Opening link in 5 seconds...</p>
+              <a href="#" id="paymentContinueBtn" target="_blank" class="btn btn-success btn-block text-lg" style="display: none;">Continue <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Pricing Section -->
+    
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+                        
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <h3>Sofia</h3>
+                    <h4>User</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      I can't believe how convenient webOSRS is. No need to worry about installing the client on different devices. It's a game-changer! I can even play during my lunch break at work!                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                        
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <h3>Luis</h3>
+                    <h4>User</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      webOSRS is a lifesaver for me. I can now play OSRS during my free time, even at work where I can't install the client. The performance is impressive, even on my device!                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                        
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <h3>Marta</h3>
+                    <h4>User</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      webOSRS stands out with its simple interface and smooth performance. It's perfect for playing during my break at work!                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                        
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <h3>Ava</h3>
+                    <h4>User</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      webOSRS is a game-changer for players who can't install clients on certain devices. I'm grateful for this service! It allows me to enjoy OSRS at school!                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+                      
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team pb-2 pt-3">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <span>Our Team</span>
+                <h2>Our Team</h2>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: center;">
+              <div class="col-lg-4 col-md-6 d-flex" style="justify-content: center;">
+                <div class="member text-dark" style="border-radius:15px;background: linear-gradient(to bottom, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.3)), url('dist/img/home/tan-backdrop.gif') repeat-y top center;background-size: cover, 100%;">
+                    <div class="fadeout-img2-2 mb-0" style="background: linear-gradient(to bottom, rgba(51,51,51, 0) 0%, rgba(51,51,51, 1) 100%); width: 100%;display:inline-block">
+                      <img src="dist/img/home/pr0tein.png" class="img-fluid mt-3 mb-0" alt="" style="max-height:250px">
+                      <img src="dist/img/osrs/icons/pmod.png" style="width:40px;height:25px;position:absolute;top:280px;left:110px;opacity:0.9">
+                    </div>
+                    <div class="member-content mt-3">
+                        <a href="https://secure.runescape.com/m=hiscore_oldschool/hiscorepersonal.ws?user1=pr0tein" target="_blank" class="text-dark"><h4>PR0TEIN</h4></a>
+                        <span class="text-dark">Founder / Developer</span>
+                        <div style="margin-top:5px;background: linear-gradient(to right, transparent, #666, #666, transparent) no-repeat center bottom / 100% 2px; padding-bottom: 4px;"></div>
+                        <p class="text-dark mt-1">
+                            Launching my RuneScape journey in 2004 ignited a passion that led to the birth of webOSRS. As its sole developer, every detail mirrors my deep appreciation for the game and my dedication to making playing on the browser a reality for everyone.
+                        </p>
+                        <div class="social">
+                            <a href="https://twitter.com/webosrs" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="https://reddit.com/u/webosrs" target="_blank"><i class="bi bi-reddit"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </div><!-- End Team Member -->
+            </div>
+        </div>
+    </section><!-- End Our Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq pt-3 pb-5">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Frequently Asked Questions</span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-12">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How do I trigger the Screen Hide function?                  </button>
+                </h3>
+                <div id="faq-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    You can now easily hide your current screen by activating <i>Screen Hide</i>. This displays a Google News page on your current display. <br><br>This can be used by pressing <span class='ml-1 mr-1 text-warning font-weight-bold' style='letter-spacing: 2px;'>CTRL + SPACE</span> at anytime on the website to activate/deactivate.<br><div class='text-center'><img src='dist/img/osrs/ctrlspace.png'></div>                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-13">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    The network I am on blocks webOSRS. What can I do?                  </button>
+                </h3>
+                <div id="faq-content-13" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    If your current network is blocking access to webOSRS, don't worry! We have alternative links that you can use to access our website. You can try the following options:<br><br><ul><li><a href="https://webosrs.resolve.network" target="_blank">webosrs.resolve.network</a> <i class="ml-1 bi bi-shield-lock-fill"></i></li></ul>These alternative links are specifically designed to bypass network restrictions, ensuring that you can still enjoy webOSRS without any interruptions. Just click on any of the provided links, and you'll be able to access the website seamlessly.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-14">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What environment do the RuneScape clients use to run?                  </button>
+                </h3>
+                <div id="faq-content-14" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    The RuneScape clients operate within a virtual container environment hosted on our server. When you access the clients, you're essentially connecting to these dedicated and isolated virtual spaces. <br><br>These containers provide a secure and controlled environment for the clients to function. It's like having a personalized room within a larger building. Your interactions with the clients are confined to your designated space, ensuring that your data remains private and persistent. <br><br>By running the clients in these virtual containers, we ensure that each user's experience is separate, secure, and optimized, all while leveraging the power and resources of our server infrastructure.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Is this an OSRS client?                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    No, this is not a standalone OSRS client.<br><br>Instead, it's a platform that facilitates the operation of multiple OSRS clients within a specialized virtual container environment. This environment allows you to access and run OSRS clients securely and efficiently, providing a tailored experience for each user.<br><br>Think of it as a controlled and optimized space where OSRS clients can run independently, while maintaining privacy and performance.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What clients are offered on this?                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    We provide only approved clients by Jagex. You can choose from the Jagex Launcher, RuneLite, and the Official OSRS client by Jagex.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Why is there lag when playing?                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    When using this, you will need a decent internet connection. Each frame is sent back to your browser much like a video feed, but at a much more intense rate as every pixel change in the game is reflected as an incoming packet.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Is this safe to use?                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    When using this, you will have your own isolated desktop running the client of your choice. We take security very seriously and have implemented the best practices and procedures to mitigate any type of threat or breach. Your data is never accessed from outside sources, and no login information is ever recorded.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What is this intended for?                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    This service is intended for players who cannot install an OSRS client on their computer. Often these will be scenarios where a player wishes to access OSRS from school or work devices. If you can install a client on your computer, we recommend utilizing that instead of this service.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Is there a risk of being banned if I use this?                  </button>
+                </h3>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    No, there is no risk of resulting in being banned for using webOSRS. This is because webOSRS only uses approved clients by Jagex for playing the game.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    I’m having problems with this. What do I do?                  </button>
+                </h3>
+                <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Submit a bug report on our website dashboard or send us an email via our contact page, which is located <a href='./home#contact' target='_blank'>here</a>                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Why can't I create a new RuneScape account from this platform on the clients?                  </button>
+                </h3>
+                <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    For your privacy and security, we require all RuneScape account creations to be made directly on the official RuneScape website. This policy ensures that your personal information, like your email address, goes straight to RuneScape, without any intermediaries.<br><br>This approach not only heightens your data security but also safeguards against potential phishing or scams from third-party platforms. Remember, your security is our priority. Always create RuneScape accounts directly on their official site.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Are there any extra costs or subscriptions to use this?                  </button>
+                </h3>
+                <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    We're committed to providing an accessible gaming experience for all RuneScape enthusiasts. To maintain this service, we operate through the generous donations from our user community. We greatly appreciate any contributions made, as they help us continually improve and evolve the platform.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-11">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How does webOSRS protect my personal data?
+                  </button>
+                </h3>
+                <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    At webOSRS, data privacy and security is our top priority. We operate as a front-end, meaning your RuneScape login details are sent directly to Jagex's servers in an encrypted form. We don't have access to or store your login credentials. Furthermore, our platform runs within secure, isolated desktop containers and all communication between your device and our servers is encrypted using robust security protocols. This ensures a secure gaming environment and helps to keep your personal data safe. Always remember, your security is our primary concern.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+                            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-15">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Why isn't webOSRS open-source?                  </button>
+                </h3>
+                <div id="faq-content-15" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <b>Security Concerns:</b> Security is a paramount concern when it comes to a platform like webOSRS, which provides access to a popular game like Old School RuneScape. Opening up the source code to the public can expose vulnerabilities and create security risks. While open sourcing typically benefits from community scrutiny, it can also attract malicious actors who might attempt to exploit the code, potentially compromising the security of the platform. The responsibility to maintain robust security measures becomes more challenging with open source, as it requires constant vigilance and timely updates to address emerging threats.<br><br><b>Trustworthiness of Code:</b> Even if webOSRS were open source, it doesn't necessarily guarantee that the code running on the platform's servers is the same as the open-source code. This lack of certainty could erode trust rather than enhance it. Users rely on the platform's stability and integrity, and open source may not provide sufficient transparency into the actual server-side operations. Without a mechanism to verify that the deployed code matches the open-source code, users may remain uncertain about the platform's trustworthiness.<br><br><b>Complexity and Resource Intensity:</b> webOSRS is a complex cloud platform that demands substantial resources, both in terms of server capacity and bandwidth. It's not something that can be easily replicated or hosted on a small-scale server or a personal machine. The intricacies involved in running a cloud gaming service of this magnitude, including real-time gameplay and data synchronization, are beyond the capabilities of most individuals or small entities. Attempting to run a local instance would require an extensive infrastructure investment and technical expertise that many lack.<br><br>In conclusion, while open source can bring transparency and community involvement to software projects, webOSRS is a unique case due to its security concerns, uncertainties regarding the actual code running on servers, and the complex, resource-intensive nature of the platform. These factors make open sourcing it less practical and potentially counterproductive in terms of enhancing trustworthiness for users.                  </div>
+                </div>
+              </div><!-- # Faq item-->
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="contact mt-0 pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Contact Us</span>
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-9 col-md-12">
+              <form id="contactForm">
+                  <div class="form-group d-none">
+                      <label for="name" style="color:#ccc">Name:</label>
+                      <input type="text" class="form-control tan-bg" id="name" name="name" required placeholder="Your name..." value="Kolton Napier"  readonly style="opacity:0.7">
+                  </div>
+                  <div class="form-group d-none">
+                      <label for="email" style="color:#ccc">Email:</label>
+                      <input type="email" class="form-control tan-bg" id="email" name="email" required placeholder="Your email..." value="kolton.napier@stu.ebernstadt.kyschools.us"  readonly style="opacity:0.7">
+                  </div>
+                  <div class="form-group">
+                      <label for="message" style="color:#ccc">Message:</label>
+                      <textarea class="form-control tan-bg" id="message" name="message" rows="14" required placeholder="Write your message here..."></textarea>                  
+                  </div>
+                  <div class="cf-turnstile mb-1 mt-0" data-theme="dark" data-callback="turnstileSucces" data-sitekey="0x4AAAAAAAIIJiBfxm1zKc_l"></div>
+                  <button type="submit" class="mt-1 btn font-weight-bold text-md p-2 pl-4 pr-4 disabled2 border-02 contact-form-submit elevation-1" style="color:#efefef;outline: none;background-image: url('dist/img/home/bg-tile-btn.png');background-size: 100% 100%"><i class="bi bi-send-fill mr-1"></i> Send</button>
+              </form>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <div id="dev-by" class="bg-dark text-sm text-center p-2" style="border-top:1px solid #888;"><i class="bi bi-code-slash text-info mr-1"></i> Developed and maintained by PR0TEIN</div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer mt-0">
+
+    <div class="container d-none">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="./" class="logo d-flex align-items-center">
+            <span>webOSRS</span>
+          </a>
+          <p>The ultimate cloud-based platform for playing Oldschool RuneScape like never before! Experience the freedom of accessing your favorite approved clients all from the comfort of your web browser.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/webosrs" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+            <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+            <a href="https://discord.gg/wZbn9mYUq6" class="discord" target="_blank"><i class="bi bi-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <!-- <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul> -->
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <!-- <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul> -->
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+           
+            <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#03707673736c7177437466616c7071702d606c6e"><span class="__cf_email__" data-cfemail="c3b0b6b3b3acb1b783b4a6a1acb0b1b0eda0acae">[email&#160;protected]</span></a><br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container ">
+      <div class="copyright">
+        <div class="mb-2">This website is in no way affiliated with <b>Jagex Ltd</b> or <b>RuneLite</b></div>
+        <div>&copy; Copyright 2022-2025 <strong><span>webOSRS</span></strong>. All Rights Reserved</div>
+        <div class="mt-2">
+            <a href="./privacy-policy" class="text-white mx-2 font-weight-bold">Privacy Policy</a> |
+            <a href="./terms-of-service" class="text-white mx-2 font-weight-bold">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader" class="bg-dark"></div>
+
+  <img id="customContextMenuImage" src="dist/img/home/right-click-menu.png" class="elevation-4" style="pointer-events: none;width:180px;height:auto;display: none; position: absolute; top: 0; left: 0; z-index: 9999;cursor:pointer;">
+
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap5/bootstrap.bundle.min.js"></script>
+
+  <script src="plugins/purecounter/purecounter_vanilla.js"></script>
+  <script src="plugins/glightbox/js/glightbox.min.js"></script>
+  <script src="plugins/swiper/swiper-bundle.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <script src="dist/js/adminlte.js"></script>
+
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="dist/js/home.js?v11"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  
+  
+    <script>
+  $(function () {
+    const $iframe = $("#ai-chat-frame");
+    if (!$iframe.length) return;
+    $iframe.on("load", () => {
+      $(".loading-placeholder").remove();
+      const observer = new IntersectionObserver((entries, obs) => {
+        if (entries[0].isIntersecting) {
+          $iframe[0].contentWindow.runRandomDemo();
+          setTimeout(() => $iframe[0].contentWindow.runRandomDemo(), 6000);
+          obs.disconnect();
+        }
+      }, { rootMargin: "0px", threshold: 0.5 });
+      observer.observe($iframe[0]);
+    });
+    if ($iframe.data("src")) {
+      $iframe.attr("src", $iframe.data("src"));
+    }
+  });
+  </script>
+  
+</body>
+
+</html>
+

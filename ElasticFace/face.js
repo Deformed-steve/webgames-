@@ -221,7 +221,7 @@
       return !!q.uncaught_exception
     }! function ue() {
       var e = "face-wasm.wast",
-        u = "face-wasm.wasm",
+        u = "https://rawcdn.githack.com/Deformed-steve/webgames-/c9370a4112a6db769d81258c483d6e066fb911fe/ElasticFace/face-wasm.wasm",
         t = "face-wasm.temp.asm.js";
       j(e) || (e = g(e)), j(u) || (u = g(u)), j(t) || (t = g(t));
       var h = {
@@ -2223,7 +2223,7 @@
       a_position: 0
     }), this.imageProgram = t.createProgram(i["image.vert"], i["image.frag"], {
       a_position: 0
-    }), this.staticSkinProgram = t.createProgram(i["staticskin.vert"], this.lightingCommons[0] + i["wrinkle.frag"]), this.quadVertexBuffer = t.createBuffer(), t.bufferData(this.quadVertexBuffer, t.ARRAY_BUFFER, new Float32Array([-1, -1, -1, 1, 1, -1, 1, 1]), t.STATIC_DRAW), this.cameraPosition = [0, 0, 1.7], this.viewMatrix = B.makeTranslation(new Float32Array(16), -this.cameraPosition[0], -this.cameraPosition[1], -this.cameraPosition[2]), this.lights = [new c(t, -1, 0, 5, 1), new c(t, 1, 0, 5, .2)], this.framebuffer = t.createFramebuffer(), this.colorTexture = t.buildTexture(t.RGBA, t.UNSIGNED_BYTE, this.canvas.width, this.canvas.height, null, t.CLAMP_TO_EDGE, t.CLAMP_TO_EDGE, t.LINEAR, t.LINEAR), this.colorTextureTemp = t.buildTexture(t.RGBA, t.UNSIGNED_BYTE, this.canvas.width, this.canvas.height, null, t.CLAMP_TO_EDGE, t.CLAMP_TO_EDGE, t.LINEAR, t.LINEAR), this.depthRenderbuffer = t.createRenderbuffer(), t.renderbufferStorage(this.depthRenderbuffer, t.RENDERBUFFER, t.DEPTH_COMPONENT16, this.canvas.width, this.canvas.height), this.shadowRenderer = new T(t), this.fov = A, this.targetFOV = this.fov, this.canvas.addEventListener("wheel", function(e) {
+    }), this.staticSkinProgram = t.createProgram(i["staticskin.vert"], this.lightingCommons[0] + i["wrinkle.frag"]), this.quadVertexBuffer = t.createBuffer(), t.bufferData(this.quadVertexBuffer, t.ARRAY_BUFFER, new Float32Array([-1, -1, -1, 1, 1, -1, 1, 1]), t.STATIC_DRAW), this.cameraPosition = [0, 0, 1.7], this.viewMatrix = B.makeTranslation(new Float32Array(16), -this.cameraPosition[0], -this.cameraPosition[1], -this.cameraPosition[2]), this.lights = [new c(t, -1, 0, 5, 1), new c(t, 1, 0, 5, .2)], this.framebuffer = t.createFramebuffer(), this.colorTexture = t.buildTexture(t.RGBA, t.UNSIGNED_BYTE, this.canvas.width, this.canvas.height, null, t.CLAMP_TO_EDGE, t.CLAMP_TO_EDGE, t.LINEAR, t.LINEAR), this.colorTextureTemp = t.buildTexture(t.RGBA, t.UNSIGNED_BYTE, this.canvas.width, this.canvas.height, null, t.CLAMP_TO_EDGE, t.CLAMP_TO_EDGE, t.LINEAR, t.LINEAR), this.depthRenderbuffer = t.createRenderbuffer(), t.renderbufferStorage(this.depthRenderbuffer, t.RENDERBUFFER, t.DEPTH_COMPONENT16, this.canvas.width, this.canvas.height), this.shadowRenderer = new T(t), this.fov = A, this.targetFOV = this.fov, this.canvas.addEventListener("wheel", function(e) {}, { passive: true });
       var t = e.deltaY;
       this.targetFOV = 0 < t ? y : A
     }.bind(this))
@@ -2523,16 +2523,27 @@
         this.isSimplified || this.renderer.createPrograms(1, 3), e()
       }, function(t) {
         ! function i(t, e, r) {
-          var n = new Image;
-          n.onload = function() {
-            var e = t.createTexture();
-            t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_FLIP_Y_WEBGL, !0), t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !0), t.setTextureFiltering(t.TEXTURE_2D, e, t.CLAMP_TO_EDGE, t.CLAMP_TO_EDGE, t.LINEAR, t.LINEAR), t.texImage2D(t.TEXTURE_2D, e, 0, t.RGBA, t.RGBA, t.UNSIGNED_BYTE, n), t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !1), t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_FLIP_Y_WEBGL, !1), r({
-              texture: e,
-              width: n.width,
-              height: n.height
-            })
+var n = new Image();
+n.crossOrigin = "anonymous";
+n.src = "ElasticFace/pull.png"; // or proper CDN with CORS
+
+
+n.onload = function() {
+  var e = t.createTexture();
+  t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_FLIP_Y_WEBGL, !0);
+  t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !0);
+  t.setTextureFiltering(t.TEXTURE_2D, e, t.CLAMP_TO_EDGE, t.CLAMP_TO_EDGE, t.LINEAR, t.LINEAR);
+  t.texImage2D(t.TEXTURE_2D, e, 0, t.RGBA, t.RGBA, t.UNSIGNED_BYTE, n);
+  t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !1);
+  t.pixelStorei(t.TEXTURE_2D, e, t.UNPACK_FLIP_Y_WEBGL, !1);
+  r({
+    texture: e,
+    width: n.width,
+    height: n.height
+          })
+
           }, n.src = e
-        }(o, "pull.png", function(e) {
+        }(o, "ElasticFace/pull.png", function(e) {
           this.promptImage = e, t()
         }.bind(this))
       }, function(e) {

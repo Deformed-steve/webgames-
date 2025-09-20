@@ -1,8 +1,0 @@
-{
-	"front":"Mat_Sky_PositiveZ.png",
-	"back":"Mat_Sky_NegativeZ.png",
-	"left":"Mat_Sky_PositiveX.png",
-	"right":"Mat_Sky_NegativeX.png",
-	"up":"Mat_Sky_PositiveY.png",
-	"down":"Mat_Sky_NegativeY.png"
-}                                                                    

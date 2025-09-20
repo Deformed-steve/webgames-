@@ -1,0 +1,1415 @@
+{
+  "type": "View",
+  "props": {
+    "width": 720,
+    "top": 0,
+    "runtime": "script/view/PanelBox.ts",
+    "right": 0,
+    "left": 0,
+    "height": 1280,
+    "bottom": 0
+  },
+  "compId": 2,
+  "child": [
+    {
+      "type": "Image",
+      "props": {
+        "top": 0,
+        "skin": "UIRes/repeat/Image_repeat_03.png",
+        "right": 0,
+        "name": "BG",
+        "left": 0,
+        "bottom": 0,
+        "alpha": 1
+      },
+      "compId": 564
+    },
+    {
+      "type": "Image",
+      "props": {
+        "skin": "UIRes/repeat/Image_repeat_01.png",
+        "name": "Frame_BG",
+        "centerY": -126,
+        "centerX": 0,
+        "anchorY": 0.5,
+        "anchorX": 0.5
+      },
+      "compId": 469,
+      "child": [
+        {
+          "type": "Image",
+          "props": {
+            "y": 811,
+            "var": "btn_AD",
+            "skin": "UIRes/repeat/Button_repeat_01.png",
+            "centerX": 160
+          },
+          "compId": 481,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_add_02.png",
+                "pivotY": 17,
+                "pivotX": 22,
+                "name": "AD",
+                "centerY": -2,
+                "centerX": -60
+              },
+              "compId": 483
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_baoxiang_03.png",
+                "centerY": -2,
+                "centerX": 15
+              },
+              "compId": 488
+            },
+            {
+              "type": "Image",
+              "props": {
+                "y": 13,
+                "x": 190,
+                "width": 74,
+                "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                "height": 71
+              },
+              "compId": 1131
+            }
+          ]
+        },
+        {
+          "type": "Image",
+          "props": {
+            "y": 811,
+            "var": "btn_close",
+            "skin": "UIRes/repeat/Button_repeat_02.png",
+            "centerX": -160
+          },
+          "compId": 574,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_add_08.png",
+                "centerY": -2,
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 575
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 173,
+            "width": 136,
+            "var": "BoxBtn1",
+            "left": 50,
+            "height": 136
+          },
+          "compId": 503,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 499,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 586
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 587
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 498,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 768,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 687
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 173,
+            "width": 136,
+            "var": "BoxBtn2",
+            "height": 136,
+            "centerX": 0
+          },
+          "compId": 1075,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1076,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1077
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1078
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1079,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1080,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1081
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 173,
+            "width": 136,
+            "var": "BoxBtn3",
+            "right": 50,
+            "height": 136
+          },
+          "compId": 1082,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1083,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1084
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1085
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1086,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1087,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1088
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 385.5,
+            "width": 136,
+            "var": "BoxBtn4",
+            "left": 50,
+            "height": 136
+          },
+          "compId": 1089,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1092,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1093
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1094
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1095,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1096,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1097
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 387,
+            "width": 136,
+            "var": "BoxBtn5",
+            "height": 136,
+            "centerX": 0
+          },
+          "compId": 1090,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1098,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1099
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1100
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1101,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1102,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1103
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 387,
+            "width": 136,
+            "var": "BoxBtn6",
+            "right": 50,
+            "height": 136
+          },
+          "compId": 1091,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1104,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1105
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1106
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1107,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1108,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1109
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 598,
+            "width": 136,
+            "var": "BoxBtn7",
+            "left": 50,
+            "height": 136
+          },
+          "compId": 1110,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1113,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1114
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1115
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1116,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1117,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1118
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 598,
+            "width": 136,
+            "var": "BoxBtn8",
+            "height": 136,
+            "centerX": -1
+          },
+          "compId": 1111,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1119,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1120
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1121
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1122,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1123,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1124
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Box",
+          "props": {
+            "y": 598,
+            "width": 136,
+            "var": "BoxBtn9",
+            "right": 51,
+            "height": 136
+          },
+          "compId": 1112,
+          "child": [
+            {
+              "type": "Image",
+              "props": {
+                "y": -34,
+                "x": -31,
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "open"
+              },
+              "compId": 1125,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Image_baoxiang_04.png",
+                    "name": "Coin",
+                    "centerY": 5,
+                    "centerX": -2
+                  },
+                  "compId": 1126
+                },
+                {
+                  "type": "Label",
+                  "props": {
+                    "y": 144.5,
+                    "width": 99,
+                    "valign": "middle",
+                    "text": "150",
+                    "scaleY": 1,
+                    "scaleX": 1,
+                    "name": "num",
+                    "height": 67,
+                    "font": "ziti_1",
+                    "centerX": 0,
+                    "anchorY": 0.5,
+                    "anchorX": 0.5,
+                    "align": "center"
+                  },
+                  "compId": 1127
+                }
+              ]
+            },
+            {
+              "type": "Image",
+              "props": {
+                "skin": "UIRes/repeat/Image_repeat_02.png",
+                "name": "close",
+                "centerY": -1,
+                "centerX": -1,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+              },
+              "compId": 1128,
+              "child": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "skin": "UIRes/baoxiang/Button_baoxaing_01.png",
+                    "name": "ad",
+                    "centerY": 4,
+                    "centerX": 0
+                  },
+                  "compId": 1129,
+                  "child": [
+                    {
+                      "type": "Image",
+                      "props": {
+                        "skin": "UIRes/baoxiang/Image_baoxiang_02.png",
+                        "label": "label",
+                        "centerY": 65,
+                        "centerX": -67
+                      },
+                      "compId": 1130
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "nodes": [
+        {
+          "target": 469,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 0,
+                "tweenMethod": "linearNone",
+                "tween": false,
+                "target": 469,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 0.5,
+                "tweenMethod": "backOut",
+                "tween": true,
+                "target": 469,
+                "label": null,
+                "key": "scaleY",
+                "index": 5
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 469,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 0,
+                "tweenMethod": "linearNone",
+                "tween": false,
+                "target": 469,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 0.5,
+                "tweenMethod": "backOut",
+                "tween": true,
+                "target": 469,
+                "label": null,
+                "key": "scaleX",
+                "index": 5
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 469,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        }
+      ],
+      "name": "ani1",
+      "id": 1,
+      "frameRate": 24,
+      "action": 1
+    },
+    {
+      "nodes": [
+        {
+          "target": 498,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 498,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 498,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 498,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 498,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 843,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 843,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 843,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 843,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 843,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 850,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 850,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 850,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 850,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 850,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 859,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 859,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 859,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 859,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 859,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 865,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 865,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 865,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 865,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 865,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 871,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 871,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 871,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 871,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 871,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 880,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 880,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 880,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 880,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 880,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 886,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 886,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 886,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 886,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 886,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        },
+        {
+          "target": 892,
+          "keyframes": {
+            "scaleY": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 892,
+                "label": null,
+                "key": "scaleY",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 892,
+                "label": null,
+                "key": "scaleY",
+                "index": 20
+              }
+            ],
+            "scaleX": [
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 892,
+                "label": null,
+                "key": "scaleX",
+                "index": 0
+              },
+              {
+                "value": 1,
+                "tweenMethod": "linearNone",
+                "tween": true,
+                "target": 892,
+                "label": null,
+                "key": "scaleX",
+                "index": 20
+              }
+            ]
+          }
+        }
+      ],
+      "name": "ani_close",
+      "id": 2,
+      "frameRate": 24,
+      "action": 0
+    }
+  ],
+  "loadList": [
+    "UIRes/repeat/Image_repeat_03.png",
+    "UIRes/repeat/Image_repeat_01.png",
+    "UIRes/repeat/Button_repeat_01.png",
+    "UIRes/repeat/Image_add_02.png",
+    "UIRes/repeat/Image_baoxiang_03.png",
+    "UIRes/repeat/Button_repeat_02.png",
+    "UIRes/repeat/Image_add_08.png",
+    "UIRes/repeat/Image_repeat_02.png",
+    "UIRes/baoxiang/Image_baoxiang_04.png",
+    "UIRes/baoxiang/Button_baoxaing_01.png",
+    "UIRes/baoxiang/Image_baoxiang_02.png"
+  ],
+  "loadList3D": []
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Totaljerkface.com - Home Of Happy Wheels - Games</title>
+<meta name="description" content="Totaljerkface web games by Jim Bonacci" />
+
+<link rel="stylesheet" href="css/main.min.css" type="text/css" />
+<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/main.min.js" type="text/javascript"></script>
+<script src="js/login.min.js" type="text/javascript"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+// Set default consent to 'denied' as a placeholder
+// Determine actual values based on customer's own requirements
+gtag('consent', 'default', {
+'ad_storage': 'denied',
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500
+});
+gtag('set', 'ads_data_redaction', true);
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MY9DT5F23"> </script>
+
+<script id="CookieConsent" type="text/javascript" data-culture="EN" src="https://policy.app.cookieinformation.com/uc.js" data-gcm-version="2.0"></script>
+
+<!-- Below is a recommended list of pre-connections, which allow the network to establish each connection quicker, speeding up response times and improving ad performance. -->
+<link rel="preconnect" href="https://a.pub.network/" crossorigin />
+<link rel="preconnect" href="https://b.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.pub.network/" crossorigin />
+<link rel="preconnect" href="https://d.pub.network/" crossorigin />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" crossorigin />
+<link rel="preconnect" href="https://secure.quantserve.com/" crossorigin />
+<link rel="preconnect" href="https://rules.quantcount.com/" crossorigin />
+<link rel="preconnect" href="https://pixel.quantserve.com/" crossorigin />
+<link rel="preconnect" href="https://cmp.quantcast.com/" crossorigin />
+<link rel="preconnect" href="https://btloader.com/" crossorigin />
+<link rel="preconnect" href="https://api.btloader.com/" crossorigin />
+<link rel="preconnect" href="https://confiant-integrations.global.ssl.fastly.net" crossorigin />
+<!-- Below is a link to a CSS file that accounts for Cumulative Layout Shift, a new Core Web Vitals subset that Google uses to help rank your site in search -->
+<!-- The file is intended to eliminate the layout shifts that are seen when ads load into the page. If you don't want to use this, simply remove this file -->
+<!-- To find out more about CLS, visit https://web.dev/vitals/ -->
+<link rel="stylesheet" href="https://a.pub.network/totaljerkface-com/cls.css">
+<script data-cfasync="false" type="text/javascript">
+    var freestar = freestar || {};
+    freestar.queue = freestar.queue || [];
+    freestar.config = freestar.config || {};
+    freestar.config.enabled_slots = [];
+    freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) };
+</script>
+<script src="https://a.pub.network/totaljerkface-com/pubfig.min.js" data-cfasync="false" async></script>
+
+<div id="fb-root"></div>
+<script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+        setTimeout(function() {
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            var g_api = document.createElement("script");
+            g_api.src = "https://apis.google.com/js/platform.js";
+            g_api.async = true;
+            g_api.defer = true;
+            document.head.appendChild(g_api);
+        }, 5000);
+    });
+</script>
+</head>
+<body>
+
+<div id="container">
+
+    <div id="header">
+        <a href="/"><img id="logo" src="/img/logo_1.png" width="410" height="85" alt="totaljerkface.com" title="totaljerkface.com" /></a><div id="nav">
+            <a href="/games.tjf"><div id="games" class="selected"></div></a>
+            <a href="/news.tjf"><div id="news"></div></a>
+            <a href="/about.tjf"><div id="about"></div></a>
+        </div>
+
+        <div id="portrait_window">
+    <iframe src="/portrait-28-11-21/portrait_teaser.html" width="200" height="150" style="border:0" scrolling="no"></iframe>
+</div>
+<div id="login">
+    <a href="user_login.tjf"><img src="/img/login_w.png" class="hd_login_btn"></a>
+                <a href="register.tjf"><img src="/img/register_w.png" class="hd_register_btn"></a>
+            <div class="login_problems"><a href="problems_logging.tjf" id="problems_button" title="Problems logging in?">Problems logging in?</a></div>
+        </div></div>
+
+    <!-- Tag ID: totaljerkface_leaderboard_atf -->
+<div align="center" data-freestar-ad="__950x90 __950x90" id="totaljerkface_leaderboard_atf" margin:20px 20px 20px>
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "totaljerkface_leaderboard_atf", slotId: "totaljerkface_leaderboard_atf" });
+  </script>
+</div><!-- notify javascript disabled users -->
+<noscript>
+    <div class="system_message">This site requires javascript. If it's not enabled, you won't be able to do anything.</div>
+</noscript><!-- Page Main Body -->
+    <div id="body">
+        <div id="left">
+            <a href="/happy_wheels.tjf">
+    <div id="hw-parallax" data-limit-x="200">
+        <div data-depth="0.06" class="layer-clouds">
+            <img src="/img/pn/clouds.png">
+        </div>
+
+        <div data-depth="0.12" class="layer-mountain-bg">
+            <img src="/img/pn/mountain_bg.png">
+        </div>
+
+        <div data-depth="0.14" class="layer-mountain-3">
+            <img src="/img/pn/mountain_3.png">
+        </div>
+
+        <div data-depth="0.22" class="layer-mom">
+            <img src="/img/pn/mom.png"/>
+        </div>
+
+        <div data-depth="0" class="layer-hw-logo">
+            <img src="/img/pn/happy_wheels_logo.png">
+        </div>
+
+        <div data-depth="0" class="layer-play-now-text">
+            <img src="/img/pn/play_now_text.png"/>
+        </div>
+    </div>
+</a>
+
+<script>
+    function createParralaxEffect() {
+        var scene = document.getElementById("hw-parallax");
+        var parallaxInstance = new Parallax(scene);
+    }
+</script>
+
+<script src="/js/lib/parallax.min.js" onload="createParralaxEffect()" defer></script>
+<link rel="stylesheet" href="/css/hw_parallax.css" />
+<br /><br />
+            <a href="divine_intervention.tjf"><img src="/img/di_play.jpg" alt="Divine Intervention Play Now" /></a><br /><br />
+        </div>
+
+        <div id="right">
+            <!-- Tag ID: totaljerkface_medrec_atf -->
+<div align="center" data-freestar-ad="__300x250 __300x250" id="totaljerkface_medrec_atf">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "totaljerkface_medrec_atf", slotId: "totaljerkface_medrec_atf" });
+  </script>
+</div><div class="header"><div>Discord</div></div>
+<div class="section_right">
+    <a href="https://discord.gg/happywheels" target="_blank" rel="noopener"><img src="/img/discord_img_new.png" width="235" height="80" alt="Happy Wheels Discord" /></a>
+</div>
+<!-- Tag ID: totaljerkface_medrec_btf -->
+<div align="center" data-freestar-ad="__300x250 __300x600" id="totaljerkface_medrec_btf">
+  <script data-cfasync="false" type="text/javascript">
+    freestar.config.enabled_slots.push({ placementName: "totaljerkface_medrec_btf", slotId: "totaljerkface_medrec_btf" });
+  </script>
+</div></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="ff_footer">
+    The full version of the game Happy Wheels can only be played at Totaljerkface.com<br/>
+    &copy; <script>document.write(new Date().getFullYear());</script> Fancy Force, LLC. All Rights Reserved.
+    <a href="privacy.tjf">Privacy Policy</a> | <a href="terms.tjf">Terms of Use</a> | <a href="report_bug.tjf">Report a Bug</a>
+</div>
+</div>
+</body>
+</html>

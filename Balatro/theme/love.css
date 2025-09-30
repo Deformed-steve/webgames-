@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Game</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* stop scrollbars */
+      background-color: rgb(154, 205, 237);
+      font-family: arial, sans-serif;
+      color: rgb(28, 78, 104);
+    }
+
+    h1 {
+      font-family: arial;
+      color: rgb(11, 86, 117);
+    }
+
+    body::before {
+      content: "Click To Start!";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      z-index: -1;
+    }
+
+    footer {
+      font-size: 12px;
+      padding-left: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    a:link { color: rgb(233, 73, 154); }
+    a:visited { color: rgb(110, 30, 71); }
+    a:hover { color: rgb(252, 207, 230); }
+
+    #canvas {
+      display: block;
+      border: none;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <footer>© 2025 Your Game</footer>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    // Example: fill background to prove it works
+    function draw() {
+      ctx.fillStyle = "rgba(0,0,0,0.2)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+</body>
+</html>

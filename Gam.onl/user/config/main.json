@@ -1,0 +1,122 @@
+{
+  "root": "main",
+  "parent": "main",
+  "display_items": 9,
+  "defaults": {
+    "emulator": "",
+    "bios": "",
+    "path": "main",
+    "rom_extension": "",
+    "video_position": "",
+    "type": "menu",
+    "has_back": true,
+    "has_corner": true,
+    "has_logo": true,
+    "has_video": true,
+    "multi_disc": 0
+  },
+  "items": {
+    "pce": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "segaSaturn": {
+      "video_position": "left:11.1vw;top:29.6vh;width:35.9vw;height:45.6vh;"
+    },
+    "3do": {
+      "video_position": "left:11.1vw;top:29.6vh;width:35.9vw;height:45.6vh;"
+    },
+    "psx": {
+      "video_position": "left:11.1vw;top:29.6vh;width:35.9vw;height:45.6vh;"
+    },
+    "arcade": {
+      "video_position": "left:10.65vw;top:29.54vh;width:36.28vw;height:48.5vh;"
+    },
+    "segaMD": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "nes": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "snes": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "n64": {
+      "video_position": "left:11.17vw;top:29.66vh;width:35.82vw;height:45.48vh;"
+    },
+    "Collections": {
+      "has_video": false
+    },
+    "pcecd": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "msu-md": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "msu1": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "gb": {
+      "video_position": "left:14.5vw;top:31.2vh;width:25.8vw;height:43.5vh;"
+    },
+    "gba": {
+      "video_position": "left:13.58vw;top:36.4vh;width:31.64vw;height:37.8vh;"
+    },
+    "gbc": {
+      "video_position": "left:15.6vw;top:31.1vh;width:28.1vw;height:44.7vh;"
+    },
+    "atari2600": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "atari5200": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "atari7800": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "jaguar": {
+      "video_position": "left:11.1vw;top:29.6vh;width:35.9vw;height:45.6vh;"
+    },
+    "lynx": {
+      "video_position": "left:11.22vw;top:30.94vh;width:35.6vw;height:44.6vh;"
+    },
+    "msx": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "nds": {
+      "video_position": "left:23.82vw;top:25.6vh;width:19.66vw;height:56vh;"
+    },
+    "ngp": {
+      "video_position": "left:15vw;top:33vh;width:25.2vw;height:41.8vh;"
+    },
+    "odyssey2": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "sega32x": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "segaCD": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "segaGG": {
+      "video_position": "left:12.2vw;top:31.4vh;width:33.44vw;height:43.6vh;"
+    },
+    "segaMS": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "segaSG": {
+      "video_position": "left:10.8vw;top:29.4vh;width:36.6vw;height:46.8vh;"
+    },
+    "vb": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "vectrex": {
+      "video_position": "left:18.5vw;top:29.8vh;width:21.3vw;height:46vh;"
+    },
+    "colecovision": {
+      "video_position": "left:11vw;top:29.9vh;width:35.9vw;height:45.6vh;"
+    },
+    "ws": {
+      "video_position": "left:11.38vw;top:31vh;width:35.4vw;height:43.6vh;"
+    }
+  }
+}

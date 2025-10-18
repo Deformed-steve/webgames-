@@ -1,0 +1,33 @@
+{
+  "name": "Turnfight",
+  "short_name": "Turnfight",
+  "description": "Turnfight is a multiplayer air combat game. It is free to play online in a web browser with no installation required. Choose your favorite plane and defeat rivals to earn points.",
+  "categories": [
+    "games"
+  ],
+  "background_color": "#abadb5",
+  "theme_color": "#abadb5",
+  "display": "standalone",
+  "orientation": "landscape",
+  "id": "/turnfight",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/data/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/data/1920x1080.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/data/800x1200.png",
+      "sizes": "800x1200",
+      "type": "image/png"
+    }
+  ],
+  "handle_links": "not-preferred",
+  "ms_start_compatible": true
+}

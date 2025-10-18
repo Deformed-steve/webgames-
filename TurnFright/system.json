@@ -1,0 +1,131 @@
+{
+  "server_id": "Cloud/1",
+  "languages": [
+    {
+      "language_id": "en",
+      "language_name": "English"
+    },
+    {
+      "language_id": "es",
+      "language_name": "Español"
+    },
+    {
+      "language_id": "pt",
+      "language_name": "Português"
+    },
+    {
+      "language_id": "cs",
+      "language_name": "Čeština"
+    },
+    {
+      "language_id": "da",
+      "language_name": "Dansk"
+    },
+    {
+      "language_id": "de",
+      "language_name": "Deutsch"
+    },
+    {
+      "language_id": "el",
+      "language_name": "Νέα Ελληνικά"
+    },
+    {
+      "language_id": "et",
+      "language_name": "Eesti keel"
+    },
+    {
+      "language_id": "fi",
+      "language_name": "Suomi"
+    },
+    {
+      "language_id": "fr",
+      "language_name": "Français"
+    },
+    {
+      "language_id": "it",
+      "language_name": "Italiano"
+    },
+    {
+      "language_id": "no",
+      "language_name": "Norsk"
+    },
+    {
+      "language_id": "nl",
+      "language_name": "Nederlandse"
+    },
+    {
+      "language_id": "pl",
+      "language_name": "Polski"
+    },
+    {
+      "language_id": "ro",
+      "language_name": "Românã"
+    },
+    {
+      "language_id": "ru",
+      "language_name": "Русский"
+    },
+    {
+      "language_id": "sv",
+      "language_name": "Svenska"
+    },
+    {
+      "language_id": "tr",
+      "language_name": "Türkçe"
+    },
+    {
+      "language_id": "uk",
+      "language_name": "Українська"
+    },
+    {
+      "language_id": "ar",
+      "language_name": "العربية"
+    },
+    {
+      "language_id": "he",
+      "language_name": "עברית"
+    },
+    {
+      "language_id": "hi",
+      "language_name": "हिन्दी"
+    },
+    {
+      "language_id": "zh",
+      "language_name": "简体中文"
+    },
+    {
+      "language_id": "ja",
+      "language_name": "日本語"
+    },
+    {
+      "language_id": "ko",
+      "language_name": "한국인"
+    },
+    {
+      "language_id": "vi",
+      "language_name": "Tiếng Việt"
+    }
+  ],
+  "snippets": [
+    "console.log(\"just show chat\");\r\nwindow.postMessage(\"enableChat\", \"*\")\r\nwindow.postMessage(\"enableOutbound\", \"*\")",
+    "function send(msg) {\r\n\twindow.postMessage(msg, '*');\r\n}\r\n\r\nsend(\"enableChat\");\r\nsend(\"enableOutbound\");\r\n\r\ntry {\r\nif (window.aiptag) {\r\n\tthrow new Error(\"adinplay already initialized\")\r\n}\r\n\r\nconsole.log(\"adinplay snippet\");\r\n\r\n// https://adinplay.com/api/\r\nwindow.aiptag = window.aiptag || {};\r\nwindow.aiptag.cmd = window.aiptag.cmd || [];\r\nwindow.aiptag.cmd.display = window.aiptag.cmd.display || [];\r\nwindow.aiptag.cmd.player = window.aiptag.cmd.player || [];\r\n\r\n// avoid mature ads?\r\nwindow.aiptag.COPPA = true;\r\nwindow.aiptag.cmp = {\r\n\tshow: true,\r\n\tposition: \"centered\",\r\n\tbutton: false,\r\n\tbuttonText: \"Privacy settings\",\r\n\tbuttonPosition: \"bottom-left\"\r\n};\r\n\r\nconst aipInfos = {\r\n\tmk48: {\r\n\t\taipId: \"SFB/mk48.io\",\r\n\t\taipPlacementId1: \"mk48-io_970x250\",\r\n\t\taipPlacementId2: \"mk48-io_970x250_2\",\r\n\t}, \r\n\tkiomet: {\r\n\t\taipId: \"SFB/kiomet.com\",\r\n\t\taipPlacementId1: \"kiomet-com_970x250\",\r\n\t\taipPlacementId2: \"kiomet-com_970x250_2\",\r\n\t},\r\n\tnetquel: {\r\n\t\taipId: \"SFB/netquel.com\",\r\n\t\taipPlacementId1: \"netquel-com_970x250\",\r\n\t\taipPlacementId2: \"netquel-com_970x250_2\",\r\n\t},\r\n\tmazean: {\r\n\t\taipId: \"SFB/mazean.com\",\r\n\t\taipPlacementId1: \"mazean-com_970x250\",\r\n\t\taipPlacementId2: \"mazean-com_970x250_2\",\r\n\t},\r\n\tkrakax: {\r\n\t\taipId: \"SFB/krakax.com\",\r\n\t\taipPlacementId1: \"krakax-com_970x250\",\r\n\t\taipPlacementId2: \"krakax-com_970x250_2\",\r\n\t},\r\n\tturnfight: {\r\n\t\taipId: \"SFB/turnfight.com\",\r\n\t\taipPlacementId1: \"turnfight-com_970x250\",\r\n\t\taipPlacementId2: \"turnfight-com_970x250_2\",\r\n\t},\r\n};\r\n\r\nconst domainSegs = window.location.host.split('.');\r\nconst gameName = domainSegs[domainSegs.length - 2];\r\nif (gameName == \"tankgank\") {\r\n\t//throw new Error('no ads');\r\n}\r\nvar aipInfo = aipInfos[gameName] || aipInfos.mk48;\r\n\r\nconst script = document.createElement('script');\r\nscript.async = true;\r\nscript.src = `//api.adinplay.com/libs/aiptag/pub/${aipInfo.aipId}/tag.min.js`;\r\nscript.onload = () => {\r\n\tlet rewarded = false;\r\n\tlet rewardGranted = false;\r\n\tlet lastInterstitial = Date.now();\r\n\tlet lastSplash = lastInterstitial;\r\n\tlet cohortId = 0;\r\n\ttry {\r\n\t\tcohortId = parseInt(localStorage.getItem(\"cohortId\")) || 0;\r\n\t} catch (e) {}\r\n\r\n\tlet interstitialRateLimit = 4;\r\n\tif (gameName == \"kiomet\" || gameName == \"mazean\" || gameName == \"turnfight\" || gameName == \"krakax\") {\r\n\t\tsend(\"enableBannerAds\");\r\n\t}\r\n\r\n\tdocument.addEventListener(\"aip_consentinit\", function(e) {\r\n\t\tsend(\"enableAdPrivacy\");\r\n\t});\r\n\r\n\tconst videoAd = document.createElement(\"div\");\r\n\tvideoAd.id = \"videoad\";\r\n\tdocument.body.appendChild(videoAd);\r\n\twindow.aiptag.cmd.player.push(function() {\r\n\t\twindow.aiptag.adplayer = new aipPlayer({\r\n\t\t\tAD_WIDTH: 960,\r\n\t\t\tAD_HEIGHT: 540,\r\n\t\t\tAD_DISPLAY: 'fullscreen', //default, fullscreen, center, modal-center, fill\r\n\t\t\tLOADING_TEXT: 'loading ad',\r\n\t\t\tPREROLL_ELEM: function(){return document.getElementById('videoad')},\r\n\t\t\tAIP_COMPLETE: function (evt)  {\r\n\t\t\t\tconsole.log(\"videoad: \" + evt);\r\n\t\t\t\tsend('unmute');\r\n\t\t\t\tsend('unpause');\r\n\t\t\t\tif (!rewarded) {\r\n\t\t\t\t\tif (evt == \"user-has-adblock\") {\r\n\t\t\t\t\t\tsend('cancelInterstitialAd');\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tsend('tallyInterstitialAd');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tAIP_REWARDEDCOMPLETE: function (evt)  {\r\n\t\t\t\tconsole.log(\"rewardedad: \" + evt);\r\n\t\t\t\tsend('unmute');\r\n\t\t\t\tsend('unpause');\r\n\t\t\t\tif (rewarded && !rewardGranted) {\r\n\t\t\t\t\tsend('cancelRewardedAd');\r\n\t\t\t\t}\r\n\t\t\t\trewarded = false;\r\n\t\t\t},\r\n\t\t\tAIP_REWARDEDGRANTED: function ()  {\r\n\t\t\t\tconsole.log(\"rewardgranted\");\r\n\t\t\t\tsend('tallyRewardedAd');\r\n\t\t\t}\r\n\t\t});\r\n\t});\r\n\r\n\tconst requestBanner = (id, width, height) => {\r\n\t\tconst container = document.getElementById(id);\r\n\t\tif (container) {\r\n\t\t\tcontainer.style.width = `${width}px`;\r\n\t\t\tcontainer.style.height = `${height}px`;\r\n\t\t\tconst id = document.createElement(\"div\");\r\n\t\t\tif (container.dataset && container.dataset.instance != \"splash\") {\r\n\t\t\t\tid.id = aipInfo.aipPlacementId2;\r\n\t\t\t} else {\r\n\t\t\t\tid.id = aipInfo.aipPlacementId1;\r\n\t\t\t}\r\n\t\t\tcontainer.appendChild(id)\r\n\t\t\twindow.aiptag.cmd.display.push(function() { aipDisplayTag.display(id.id); });\r\n\t\t\tsend(\"tallyBannerAd\");\r\n\t\t}\r\n\t};\r\n        let inGame = false;\r\n\twindow.addEventListener('message', (event) => {\r\n\t\tswitch (event.data) {\r\n\t\t\tcase \"spawning\":\r\n\t\t\tcase \"escaping\":\r\n\t\t\t\tlastSplash = Date.now();\r\n                                inGame = false;\r\n\t\t\t\ttry {\r\n\t\t\t\t\taipAPItag.showCMPButton();\r\n\t\t\t\t} catch (e) { console.warn(e); }\r\n\t\t\t\tbreak;\r\n\t\t\tcase \"playing\":\r\n\t\t\tcase \"inGame\":\r\n                                inGame = true;\r\n\t\t\t\twindow.aiptag.cmd.display.push(function() { aipDisplayTag.destroy(); });\r\n\t\t\t\ttry {\r\n\t\t\t\t\taipAPItag.hideCMPButton();\r\n\t\t\t\t} catch (e) { console.warn(e); }\r\n\t\t\t\tbreak;\r\n\t\t\tcase \"requestAdPrivacy\":\r\n\t\t\t\taipAPItag.showCMPScreen();\r\n\t\t\t\tbreak;\r\n\t\t\tcase \"requestBannerAd\":\r\n\t\t\t\tif (gameName != \"kiomet\") {\r\n\r\n\t\t\t\t} else if (window.matchMedia(\"(min-height: 800px)\").matches) {\r\n\t\t\t\t\trequestBanner(\"banner_container\", 970, 250);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tconsole.log(\"window too short for ad\");\r\n\t\t\t\t}\r\n\t\t\t\tbreak;\r\n\t\t\tcase \"requestInterstitialAd\":\r\n                                if (inGame) {\r\n                                     // Mk48 doesn't leave game for respawn ads.\r\n                                     lastSplash = Date.now();\r\n                                }\r\n\t\t\t\tconst elapsed = lastSplash > lastInterstitial + 1000 * 60 * interstitialRateLimit;\r\n\t\t\t\tif (typeof window.aiptag.adplayer !== 'undefined' && elapsed) {\r\n\t\t\t\t\tsend('mute');\r\n\t\t\t\t\tsend('pause');\r\n\t\t\t\t\trewarded = false;\r\n\t\t\t\t\tlastInterstitial = Date.now();\r\n\t\t\t\t\twindow.aiptag.cmd.player.push(function() { window.aiptag.adplayer.startVideoAd(); });\r\n\t\t\t\t} else {\r\n\t\t\t\t\tif (!elapsed) {\r\n\t\t\t\t\t\tconsole.log(\"too soon\");\r\n\t\t\t\t\t}\r\n\t\t\t\t\tsend('cancelInterstitialAd');\r\n\t\t\t\t}\r\n\t\t\t\tbreak;\r\n\t\t\tcase \"requestRewardedAd\":\r\n\t\t\t\tif (typeof window.aiptag.adplayer !== 'undefined') {\r\n\t\t\t\t\tsend('mute');\r\n\t\t\t\t\tsend('pause');\r\n\t\t\t\t\trewarded = true;\r\n\t\t\t\t\trewardGranted = false;\r\n\t\t\t\t\twindow.aiptag.cmd.player.push(function() { window.aiptag.adplayer.startRewardedAd(); });\r\n\t\t\t\t} else {\r\n\t\t\t\t\tsend('cancelRewardedAd');\r\n\t\t\t\t}\r\n\t\t\t\tbreak;\r\n\t\t}\r\n\t});\r\n\tsend(\"snippetLoaded\");\r\n\tsend(\"enableAccountExemptBannerAds\");\r\n\tsend(\"enableAccountExemptInterstitialAds\");\r\n\tsend(\"enableAccountExemptRewardedAds\");\r\n\tsend(\"enableInterstitialAds\");\r\n\t//send(\"enableRewardedAds\");\r\n};\r\ndocument.head.appendChild(script);\r\n} catch (e) {\r\n\tconsole.warn(e);\r\n}\r\n"
+  ],
+  "available_servers": [
+    "Cloud/4",
+    "Cloud/2",
+    "Cloud/1"
+  ],
+  "alternative_domains": [
+    "turnfight.flyingbrain.online",
+    "turnfight.dancingkitten.art",
+    "turnfight.engagemetrics.com",
+    "turnfight.stratusflyer.com"
+  ],
+  "translations": {
+    "about_contact_md": "# Contact Us\r\nIf you have any feedback to share, business inquiries, or any other concern, please contact us on [Discord](Discord) or by email at [contact@softbear.com](email).",
+    "about_md": "# Description\r\nTurnfight is an online multiplayer aircraft combat game.\r\n\r\nTo learn more about the game, visit the [help page](/help/).",
+    "privacy_md": "# Introduction\r\nWe collect information to provide, measure, and improve services for all our users. Generally speaking, the amount of personal information we collect is minimal, and you can opt out of providing most of it.\r\n\r\nIf you are under 18 years of age, we require that you avoid sharing your real name or other personal information in-game, and we recommend asking a trusted adult to help interpret the following information.\r\n\r\n# Information we collect\r\n|Information|Collection method|Suggested opt-out method|Primary purpose|Storage duration|\r\n|-|-|-|-|-|\r\n|Alias|Splash screen|Leave blank|Differentiate between players|Forever, e.g. with leaderboard score|\r\n|Team name|Team panel|Don't make team|Differentiate between teams|Forever, e.g. with leaderboard score|\r\n#ifdef chat\r\n|Chat messages|Chat panel|Don't send any|Allow and moderate player communication|Forever, until manually deleted|\r\n#endif\r\n|IP address|Game server|Use a VPN|Security|Forever, e.g. with chat message|\r\n|User agent, referrer|Game server|Use a browser extension to hide|Aggregate or anonymous metrics|Forever|\r\n|How long you play, FPS|Game server|N/A|Aggregate or anonymous metrics|Forever|\r\n#ifdef accounts\r\n|User name|Profile|Don't sign in|Sign in process|Forever, unless you delete your account|\r\n|Nick name|Profile|Leave blank, or don't sign in|Differentiate between players|Forever, unless you delete it|\r\n#ifdef avatar\r\n|Avatar image|Profile|Leave blank, or don't sign in|Differentiate between users|Forever, until manually deleted in Profile|\r\n#endif\r\n|Other information you provide|Profile and Store|Leave blank|Various|Forever, until manually deleted in Profile or Store|\r\n#endif\r\n\r\nWe do not collect geolocation data or automatically process any data to \"profile\" you.\r\n\r\n# Information we store on your computer\r\nSome game settings, such as language and volume level, are stored in your browser's local storage. To ensure the continuity and consistency of your experience, and provide for internal operations, we store a persistent session identifier in your browser's local storage. We do not use this identifier for advertising purposes.\r\n\r\n#ifdef cookie_consent\r\nYou can revoke consent for particular non-essential cookies in [settings](/settings/), in which case they will be stored in volatile session storage (not stored on your device).\r\n#endif\r\n\r\nYou can reset or clear any or all cookies or local storage, at any time, by using your browser's \"clear site data\" option.\r\n\r\n# Information we share with 3rd parties\r\n#ifdef chat\r\nWe share your chat messages, including team/whisper chat, with volunteer moderators to help limit inappropriate messages.\r\n#endif\r\n\r\nWe also use third party services that use cookies, local storage, and/or web beacons for the purpose of online, multi-site behavioral advertising and analytics. This services may collect, share, and/or sell your personal information according to their own privacy policies. We make best efforts to forward, to you, all attempts by such services to obtain your consent or privacy preferences.\r\n\r\n# Changes\r\nWe reserve the right to alter these privacy policies at any time, without notice.\r\n\r\n#ifdef contact_info\r\n# Contact Us\r\nIf you have any concern, such as a desire to remove your nickname or your child's nickname from the leaderboard, please contact us by email at [email] or by postal mail at Softbear, Inc. 14150 NE 20th Street #F1-315 Bellevue WA 98007 USA.\r\n#endif",
+    "help_md": "# Controls\r\n\r\n- Use the **mouse** to adjust your **view and aircraft orientation**\r\n- Exception: Holding **right-click** or enabling keyboard-only controls mean the mouse doesn't affect orientation\r\n- **Left click** or press **Space** to fire primary **weapons**\r\n- Press **W and S** to pitch **down and up**\r\n- Press **A and D** to yaw **left and right**\r\n- Press **Q and E** to roll **left and right**\r\n- Press **Tab** and **Shift** to increase and decrease **throttle**\r\n- Press **R to reload** weapons\r\n- Press **1, 2, or 3** to select an available **upgrade**\r\n\r\n# Aiming\r\n\r\nRemember to aim ahead of your target, especially by using the 'lead' indicator icon. If you don't see the icon, the target may not be in range. Lower level aircraft can't be aimed too\r\nfar away from their current orientation.\r\n\r\n# Score\r\n\r\n- During level 1, you earn points simply for surviving until level 2\r\n- If you destroy an enemy aircraft, you get a fraction of their score\r\n- If you destroy a submarine or balloon (the former requires cannon), you get a one-time bonus\r\n- If you capture a submarine or balloon (by staying nearby for a while), you get a recurring bonus\r\n- If your aicraft is destroyed, you lose a fraction of your score\r\n\r\n# Instruments\r\n\r\nYou can learn more about the status of your aircraft by checking instruments in the bottom right corner:\r\n- **THR**: throttle\r\n- **IAS**: indicated airspeed\r\n- **ALT**: altitude\r\n- **MG**: machine-gun ammo\r\n- **CNN**: cannon ammo, more damaging than machine-gun\r\n\r\n# Caution and warnings\r\n\r\nIn hazardous situations, a warning may be displayed in the center of the screen:\r\n- **Out of bounds**: too far from center of world\r\n- **Stall**: insufficient airspeed, compromising maneuverability\r\n- **Hypoxia**: excessive altitude\r\n- **Over G**: excessive G-force due to aggressive maneuvering\r\n\r\n# Teams\r\n\r\nWhile playing, you can press Escape to allow your mouse to interact with the team\r\nmenu in the upper left. Teams share a single score. When a member dies, the score\r\nfraction transferred is lower when there are more members.",
+    "terms_md": "The following terms govern your use of the [site] website and [noun].\r\n\r\n# Disclaimers\r\n* If you do not agree with these terms, or you are under 18 and you have not obtained your parent or legal guardian's permission, do not continue to visit this site.\r\n* If you are a parent, please note the existence of many parental monitoring and internet filtering products, some of which are free to use. Examples include Google Family Link (for Android and ChromeOS devices), Apple Screen Time (for iOS, iPad OS, and macOS devices), and Microsoft Family Safety (for Windows PC and Xbox).\r\n* Familiarize yourself with the symptoms of Internet Gaming Disorder (IGD): preoccupation with gaming, withdrawal symptoms when away from games, feeling an urge to play longer, unsuccessful attempts to quit gaming, losing interest in other activities, continuing to game despite harms, lying to others about time spent gaming, gaming as a coping mechanism, and risking your academics or career. Aim for a balance of limited gaming with sufficient physical activity, social interactions, sleep, and study.\r\n* While we make an effort to filter user-generated content by automatically censoring all messages and providing a pathway for trusted players to become volunteer moderators, no filtering is perfect and you or your child may be exposed to inappropriate text and low-resolution images from other users. Please note that our automated censoring is much less effective for languages other than English.\r\n#ifdef chat\r\n* You may hide chat via the settings tab.\r\n#endif\r\n* If you create or submit in-game content, you grant us a perpetual right to use or share it for any purpose and promise it does not violate these terms.\r\n* We are not responsible for inappropriate content displayed by third parties, such as advertisers. If you see an inappropriate advertisement or category, you may report it. You assume sole responsibility for risks arising from interacting with third parties.\r\n* Please familiarize yourself with our [privacy policy](/privacy/).\r\n\r\n# Allowed Activities\r\nYou are granted a non-exclusive license to do the following for either commercial or non-commercial purposes, provided you adhere to all the terms.\r\n\r\n* Playing the [noun].\r\n* Recording and/or publishing screenshots, videos, or other content involving the [noun].\r\n* Using the individual game textures or adaptations of them in connection with content involving the [noun] (such as in a video thumbnail).\r\n* Linking to or embedding the [noun] on another website.\r\n#ifdef accounts\r\n* Signing in with a 3rd party platform account, provided you follow its terms.\r\n#endif\r\n\r\n# Prohibited Activities\r\nYou agree to never engage in any of the following activities.\r\n\r\n* Disclosing any personal information (full name, contact information, etc.), if you are under 18 years of age, even if you have your parents' permission.\r\n#ifdef chat\r\n* Using inappropriate or offensive language for a nickname, team name, in game chat, or in any comments section corresponding to the [noun].\r\n#endif\r\n#ifndef chat\r\n* Using inappropriate or offensive language for a nickname, team name, or in any comments section corresponding to the [noun].\r\n#endif\r\n* Placing a higher burden on the game's server(s) than two instances of the official game client would (opening more than two connections at a time, sending messages at a higher frequency, or otherwise compromising the integrity of the server(s)).\r\n* Violating any applicable law, regulation, or school/employer/family policy.\r\n* Violating or appearing to violate the rights or privacy of others.\r\n#ifdef accounts\r\n* Sharing your account with anyone other than your parent or legal guardian.\r\n#endif\r\n\r\n# Liability\r\n[site] **is provided \"AS IS\". The developers make no warranties, express or implied, and hereby disclaim all implied warranties, including any warranty of merchantability and warranty of fitness for a particular purpose.**\r\n\r\nSoftbear, Inc. will not be liable for any indirect, incidental, consequential, special, or punitive damages including tangible or intangible losses arising from these terms or this site. You acknowledge that your sole remedy for such disputes is to stop using this site and, if applicable, delete your account. The only exception is if your jurisdiction does not allow a particular limitation of liability for a particular type of damages, in which case the liability of Softbear, Inc. will be the minimum permitted by applicable law.\r\n\r\n# Trademarks\r\n[trademarks] and Softbear are trademarks of Softbear, Inc.\r\n\r\nGoogle Play and the Google Play logo are trademarks of Google LLC.\r\n\r\n# Disputes\r\nThese terms shall be governed in according with USA law, and all shall be settled in the King County, WA court system.\r\n\r\n# Severability\r\nIn the event any provision of this agreement is determined to be void or unenforceable, such determination shall not affect the remainder of this agreement, which shall continue to be in force.\r\n\r\n# Changes\r\nWe reserve the right to alter these Terms of Service at any time, without notice. You assume responsibility for periodically checking them.\r\n\r\n#ifdef contact_info\r\n# Contact Us\r\nIf you have any question or concern, please contact us by email at [email] or by postal mail at Softbear, Inc. 14150 NE 20th Street #F1-315 Bellevue WA 98007 USA.\r\n#endif"
+  }
+}

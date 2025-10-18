@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang=en translate=no>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name=viewport>
+<title>Turnfight</title>
+<base href="http://localhost:8000/TurnFright/">
+<meta content="Turnfight is a multiplayer air combat game. It is free to play online in a web browser with no installation required. Choose your favorite plane and defeat rivals to earn points." name=description>
+<meta content="game, airplane, dogfight, multiplayer, free" name=keywords>
+<meta content=#abadb5 name=theme-color>
+<meta content=Turnfight property=og:title>
+<meta content="Turnfight is a multiplayer air combat game. It is free to play online in a web browser with no installation required. Choose your favorite plane and defeat rivals to earn points." name=og:description>
+<meta content=website property=og:type>
+<meta content="https://turnfight.com/data/512x512.png" property=og:image>
+<link href=https://turnfight.com/ rel=canonical>
+<link href="http://localhost:8000/TurnFright/favicon.png" rel=icon>
+<link href="http://localhost:8000/TurnFright/data/manifest.json" rel=manifest>
+<script>
+  var request_pointer_lock_with_unadjusted_movement = (a => {
+    const b = a.requestPointerLock({
+      unadjustedMovement: !0
+    });
+    if (b) {
+      b.catch(b => {
+        if (b.name === `NotSupportedError`) {
+          a.requestPointerLock()
+        }
+      })
+    }
+  })
+</script>
+<script type=module>
+  import init, * as bindings from 'http://localhost:8000/TurnFright/client.js';
+  const wasm = await init({
+    module_or_path: '/client_bg.wasm'
+  });
+
+
+  window.wasmBindings = bindings;
+
+
+  dispatchEvent(new CustomEvent("TrunkApplicationStarted", {
+    detail: {
+      wasm
+    }
+  }));
+</script>
+<link href="http://localhost:8000/TurnFright/data/renderer.js" rel=modulepreload>
+<script>
+  var startLoadInterval = (() => {
+    let a = 0;
+    let b = document.getElementById(`load_warning`);
+    let c = document.getElementById(`load_warning_text`);
+    const d = setInterval(() => {
+      if (document.getElementById(`canvas`)) {
+        clearInterval(d);
+        if (b && b.style) {
+          b.style.display = `none`
+        };
+        return
+      };
+      if (a > 5) {
+        b.style.display = `initial`;
+        c.innerText = `Loading taking longer than expected (${Math.floor(a)}s)`
+      };
+      a += 0.5
+    }, 500)
+  });
+  try {
+    navigator.serviceWorker.getRegistrations().then(a => {
+      for (const b of a) {
+        b.unregister()
+      }
+    })
+  } catch (a) {
+    console.log(a)
+  }
+</script>
+<link crossorigin href="http://localhost:8000/TurnFright/client.js" rel=modulepreload>
+<link as=fetch crossorigin href="http://localhost:8000/TurnFright/client_bg.wasm" rel=preload type=application/wasm>
+</head>
+
+<body onload=startLoadInterval() style=background-color:#abadb5>
+  <div id=load_warning style=color:#fff;text-align:center;padding:1rem;font-family:sans-serif;display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)>
+    <h2 id=load_warning_text style=margin-top:0></h2><button style="color:#fff;cursor:pointer;background-color:#505050;border:2px solid #606060;border-radius:.5rem;width:10rem;height:3rem;font-size:1.2rem" onclick=window.location.reload()>Click to retry</button>
+  </div>
+</body>
+
+</html>

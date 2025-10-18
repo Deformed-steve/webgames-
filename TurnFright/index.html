@@ -3,7 +3,6 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name=viewport>
 <title>Turnfight</title>
-<base href="https://cdn.jsdelivr.net/gh/Deformed-steve/webgames-@main/TurnFright">
 <meta content="Turnfight is a multiplayer air combat game. It is free to play online in a web browser with no installation required. Choose your favorite plane and defeat rivals to earn points." name=description>
 <meta content="game, airplane, dogfight, multiplayer, free" name=keywords>
 <meta content=#abadb5 name=theme-color>
@@ -12,8 +11,8 @@
 <meta content=website property=og:type>
 <meta content=https://turnfight.com/data/512x512.png property=og:image>
 <link href=https://turnfight.com/ rel=canonical>
-<link href=/favicon.png rel=icon>
-<link href=/data/manifest.json rel=manifest>
+<link href=https://cdn.jsdelivr.net/gh/Deformed-steve/webgames-@main/TurnFright/favicon.png rel=icon>
+<link href=https://cdn.jsdelivr.net/gh/Deformed-steve/webgames-@main/TurnFright/data/manifest.json rel=manifest>
 <script>
   var request_pointer_lock_with_unadjusted_movement = (a => {
     const b = a.requestPointerLock({
@@ -30,9 +29,10 @@
 </script>
 <script type=module>
   import init, * as bindings from '/client.js';
-  const wasm = await init({
-    module_or_path: '/client_bg.wasm'
-  });
+const wasm = await init({
+  module_or_path: '/client_bg.wasm'
+});
+
 
 
   window.wasmBindings = bindings;
@@ -44,7 +44,7 @@
     }
   }));
 </script>
-<link href=/data/renderer.js rel=modulepreload>
+<link href=https://cdn.jsdelivr.net/gh/Deformed-steve/webgames-@main/TurnFright/data/renderer.js rel=modulepreload>
 <script>
   var startLoadInterval = (() => {
     let a = 0;
@@ -75,8 +75,8 @@
     console.log(a)
   }
 </script>
-<link crossorigin href=/client.js rel=modulepreload>
-<link as=fetch crossorigin href=/client_bg.wasm rel=preload type=application/wasm>
+<link crossorigin href=https://cdn.jsdelivr.net/gh/Deformed-steve/webgames-@main/TurnFright/client.js rel=modulepreload>
+<link as=fetch crossorigin href=https://cdn.jsdelivr.net/gh/Deformed-steve/webgames-@main/TurnFright/client_bg.wasm rel=preload type=application/wasm>
 </head>
 
 <body onload=startLoadInterval() style=background-color:#abadb5>

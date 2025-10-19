@@ -104,6 +104,14 @@ body {
 	<div id="status-notice" class="godot" style="display: none;"></div>
 </div>
 
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('headers.js', { scope: './' })
+    .then(() => console.log('Service worker registered.'))
+    .catch(err => console.warn('Service worker failed:', err));
+}
+</script>
+
 <script src="That's not my neighbor.js"></script>
 
 <!-- NEW PATCH: load .pck.part files -->
